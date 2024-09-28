@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/* TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.bg-blue-black {
+  /* background-color: rgb(9, 34, 83); */
+  background-color: rgb(6, 21, 48) !important;
+}
+/*     background-color: rgba(22, 80, 196, 0.623);
+ */
+.bg-blue-light {
+  background-color: rgba(22, 80, 196, 0.623);
+}
+
+/* Importar estilos */
+
+@font-face {
+  font-family: code-light;
+  src: url(/public/fonts/code/CODE\ Light.otf) format("opentype");
+}
+
+*{
+  background-color: rgb(6, 21, 48);
+}
