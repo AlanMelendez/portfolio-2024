@@ -26,13 +26,13 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
         <h1 class="portfolio-title">Ing. Alan Cuevas Melendez</h1>
       </div>
       <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank" style="background-color: white;">
+        <a href="https://github.com/AlanMelendez" target="_blank" style="background-color: white;">
           <img src="/icons/github.png" alt="GitHub" class="img-social" />
         </a>
-        <a href="https://instagram.com/yourusername" target="_blank">
+        <a href="mailto:alanmelendezalaan@outlook.com" target="_blank">
           <img src="/icons/gmail.png" alt="Gmail" class="img-social"  />
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">
+        <a href="https://linkedin.com/in/alan-melendez-bb3537218" target="_blank">
           <img src="/icons/linkedin.png" alt="LinkedIn" class="img-social"  />
         </a>
       </div>
