@@ -20,7 +20,7 @@
 .left-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   /* margin-bottom: 20px; */
   height: 100%;
@@ -105,6 +105,10 @@
   margin-bottom: 5px;
   font-family: 'Courier New', Courier, monospace;
   color: #f0eded;
+  word-spacing: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 50px;
 }
 
 /* Contenedor Derecho */
