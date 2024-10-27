@@ -29,7 +29,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
               <a href="mailto:alanmelendezalaan@outlook.com" target="_blank">
                 <img src="/icons/gmail.png" alt="Gmail" class="img-social" />
               </a>
-              <a href="https://linkedin.com/in/alan-melendez-bb3537218" target="_blank">
+              <a href="https://www.linkedin.com/in/alan-cuevas-melendez-bb3537218/" target="_blank">
                 <img src="/icons/linkedin.png" alt="LinkedIn" class="img-social" />
               </a>
             </div>

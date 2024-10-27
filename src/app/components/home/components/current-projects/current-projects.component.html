@@ -10,7 +10,9 @@
                 <mat-tab >
               
                     <ng-template mat-tab-label class="template-label-icon">
-                        <img src="{{item.iconsrc}}" alt="{{item.title}}" class="img-icon-project" />
+                        <img src="{{item.iconsrc}}" alt="{{item.title}}" 
+                   
+                        class="img-icon-project" />
                         {{item.title}}
                     </ng-template>
                     <ng-template matTabContent  #itemTabContent style="height: 100%; display: flex; justify-content: center; align-items: center;">
@@ -26,7 +28,7 @@
                             <div class="card-container scroll-suave" #scrollCardContainer>
                                 <mat-card class="project-card" *ngFor="let project of item.projects">
                                     <div class="container-card-img">
-                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" />
+                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" [style.background-color]="project.imgbg"       />
                                     </div>
                                     <div class="container-card-title">
                                         <mat-card-title class="card-title">{{project.title}}</mat-card-title>
@@ -70,6 +72,11 @@
               <div class="modal-details">
                 <p>{{ selectedProject?.details }}</p>
               </div>
+
+              <div class="iframe-website">
+                <!-- <iframe *ngIf="trustedUrl" [src]="trustedUrl" frameborder="0"></iframe> -->
+              </div>
+              
             </mat-dialog-content>
             <mat-dialog-actions align="end">
               <button mat-button (click)="closeModal()">Cerrar</button>
