@@ -1,6 +1,13 @@
 /* Contenedor Principal */
+.container-total{
+  width: 100% !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 .portfolio-container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +20,10 @@
 .left-container {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  height: 100%;
 }
 
 .container-img {
@@ -101,6 +110,7 @@
 /* Contenedor Derecho */
 .right-container {
   max-width: 500px;
+  height: 100%;
 }
 
 .portfolio-description {
