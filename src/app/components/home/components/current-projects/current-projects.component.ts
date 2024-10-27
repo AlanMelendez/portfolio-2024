@@ -27,11 +27,27 @@ import {
   ],
   templateUrl: './current-projects.component.html',
   styleUrl: './current-projects.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 
 })
 export class CurrentProjectsComponent {
   readonly dialog = inject(MatDialog);
+  titleText: string = 'Proyectos Actuales';
+  displayedText: string = ''; // Texto que se irá mostrando progresivamente
+  index: number = 0;
+  typingSpeed: number = 150; // Velocidad de tipeo en milisegundos
+
+  ngOnInit(): void {
+    this.startTypingEffect();
+  }
+
+  startTypingEffect(): void {
+    if (this.index < this.titleText.length) {
+      this.displayedText += this.titleText.charAt(this.index);
+      this.index++;
+      setTimeout(() => this.startTypingEffect(), this.typingSpeed);
+    }
+  }
 
   elements = [
     {
