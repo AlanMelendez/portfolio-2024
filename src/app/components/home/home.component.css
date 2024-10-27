@@ -111,7 +111,7 @@
     flex-direction: row;
     padding: 10px;
     color: whitesmoke;
-    background-color: rgb(9, 34, 83);
+    /* background-color: rgb(9, 34, 83); */
     border-radius: 40px;
     cursor: pointer;
   }
