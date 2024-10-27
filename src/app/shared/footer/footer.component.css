@@ -1,5 +1,11 @@
+.footer-toolbar{
+  background-color: rgb(6, 21, 48);
+
+}
 .main-footer{
   margin: 10px;
+  background-color: rgb(6, 21, 48);
+
 }
 .letras-footer{
   width: 100%;
@@ -7,4 +13,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+    background-color: rgb(6, 21, 48);
+
 }

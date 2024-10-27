@@ -8,12 +8,13 @@ import { MatListModule, MatNavList, MatListItem } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AboutMeComponent } from "./components/about-me/about-me.component";
+import { CurrentProjectsComponent } from "./components/current-projects/current-projects.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [MatToolbarModule, MatIconModule, MatFormFieldModule, MatSidenavModule,
-    MatListModule, MatButtonModule, MatNavList, MatListItem, MatExpansionPanel, FooterComponent, AboutMeComponent],  templateUrl: './home.component.html',
+    MatListModule, MatButtonModule, MatNavList, MatListItem, MatExpansionPanel, FooterComponent, AboutMeComponent, CurrentProjectsComponent],  templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {

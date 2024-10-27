@@ -1,0 +1,76 @@
+<div class="container-projects">
+    <mat-tab-group>
+        @for (item of elements; track $index) {
+            <mat-tab >
+          
+                <ng-template mat-tab-label class="template-label-icon">
+                    <img src="{{item.iconsrc}}" alt="{{item.title}}" class="img-icon-project" />
+                    {{item.title}}
+                </ng-template>
+                <ng-template matTabContent  #itemTabContent>
+                    
+                    <div class="container-item">
+                        <div class="container-scroll left-scroll">
+                            <!-- create mat-icon row left -->
+                            <button mat-icon-button (mousedown)="startScrolling('left')" (mouseup)="stopScrolling()" (mouseleave)="stopScrolling()">
+                              <mat-icon>chevron_left</mat-icon>
+                              </button>
+      
+                          </div>
+                        <div class="card-container scroll-suave" #scrollCardContainer>
+                            <mat-card class="project-card" *ngFor="let project of item.projects">
+                                <div class="container-card-img">
+                                    <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" />
+                                </div>
+                                <div class="container-card-title">
+                                    <mat-card-title class="card-title">{{project.title}}</mat-card-title>
+                                </div>
+                                <div class="container-card-description">
+                                    <mat-card-content class="card-description">
+                                        <p>{{project.description}}</p>
+                                      </mat-card-content>
+                                </div>
+                                 <!-- Botón "Ver más" que abre el modal -->
+                                 <div class="container-card-button">
+                                    <button mat-button class="styled-button" (click)="openModal(project)">Ver más</button>
+                                  </div>
+                                  
+                              
+                            </mat-card>
+                          </div>
+                          <div class="container-scroll right-scroll">
+                            <!-- create mat-icon row right -->
+                            <button mat-icon-button (mousedown)="startScrolling('right')" (mouseup)="stopScrolling()" (mouseleave)="stopScrolling()">
+                                <mat-icon>chevron_right</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                   
+                </ng-template>
+              
+            </mat-tab>
+        }
+      </mat-tab-group>
+
+      <ng-template #projectModal let-data>
+        <h2 mat-dialog-title class="modal-title" >{{ selectedProject?.title }}</h2>
+        <mat-dialog-content class="modal-content">
+          <p class="description-text">
+            {{ selectedProject?.description }}
+            <a *ngIf="selectedProject?.website" href="{{ selectedProject.website }}" target="_blank" class="link-icon">
+              <mat-icon>open_in_new</mat-icon>
+            </a>
+          </p>
+          <div class="modal-details">
+            <p>{{ selectedProject?.details }}</p>
+          </div>
+        </mat-dialog-content>
+        <mat-dialog-actions align="end">
+          <button mat-button (click)="closeModal()">Cerrar</button>
+        </mat-dialog-actions>
+      </ng-template>
+      
+      
+      
+
+</div>
