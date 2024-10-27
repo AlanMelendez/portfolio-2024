@@ -1,10 +1,11 @@
 /* Contenedor Principal */
-.container-total{
+.container-total {
   width: 100% !important;
   height: 100vh;
   display: flex;
   justify-content: center;
 }
+
 .portfolio-container {
   width: 100%;
   height: 100%;
@@ -12,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 30px; /* Aumentado para mayor espacio */
   background-color: rgb(6, 21, 48);
 }
 
@@ -22,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 20px; */
   height: 100%;
 }
 
@@ -31,26 +31,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px; /* Aumentado para mayor espacio alrededor de la imagen */
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 250px; /* Aumentado de 200px a 250px */
+  height: 250px; /* Aumentado de 200px a 250px */
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Mayor espacio debajo de la imagen */
   background-color: white;
-  box-shadow: 1px 0px 46px -10px rgba(255, 255, 255, 0.51);
-  padding: 5px;
+  box-shadow: 2px 0px 56px -8px rgba(255, 255, 255, 0.51); /* Sombra ajustada */
+  padding: 8px; /* Aumentado para destacar el borde blanco */
 }
 
+/* Estilos de los Iconos Sociales */
 .social-icons {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250px;
-  height: 250px;
+  width: 300px; /* Aumentado para mantener espacio entre los íconos */
+  height: 300px; /* Aumentado para mantener espacio entre los íconos */
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-around;
@@ -59,15 +60,11 @@
 
 .social-icons a {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px; /* Aumentado de 40px a 50px */
+  height: 50px; /* Aumentado de 40px a 50px */
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 1px 0px 46px -5px rgba(255, 255, 255, 0.51);
-  img{
-    border-radius: 30%;
-  }
-
+  box-shadow: 2px 0px 56px -8px rgba(255, 255, 255, 0.51); /* Sombra ajustada */
 }
 
 .social-icons a:nth-child(1) { /* GitHub */
@@ -80,7 +77,6 @@
   top: 89%;
   left: 19%;
   transform: translate(28%, -50%);
- 
 }
 
 .social-icons a:nth-child(3) { /* LinkedIn */
@@ -89,52 +85,49 @@
   transform: translate(-20%, -50%);
 }
 
-/* Estilos de los Iconos Sociales */
 .img-social {
   width: 100%;
   height: 100%;
   background-color: white;
-  padding: 5px;
+  padding: 8px; /* Aumentado para resaltar los íconos */
 }
 
 /* Estilos para Título */
 .portfolio-title {
-  font-size: 24px;
+  font-size: 32px; /* Aumentado de 24px a 32px */
   font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 30px; /* Aumentado para mayor separación arriba */
+  margin-bottom: 10px; /* Ajustado */
   font-family: 'Courier New', Courier, monospace;
   color: #f0eded;
-  word-spacing: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  margin-top: 50px;
+  line-height: 1.2; /* Ajuste de line-height para mayor legibilidad */
 }
 
 /* Contenedor Derecho */
 .right-container {
-  max-width: 500px;
+  max-width: 600px; /* Aumentado para mayor espacio de texto */
   height: 100%;
 }
 
 .portfolio-description {
-  font-size: 16px;
-  color: #555;
+  font-size: 18px; /* Aumentado de 16px a 18px */
+  color: #ccc; /* Color ajustado para mejor contraste */
   text-align: justify;
+  line-height: 1.6; /* Mayor espaciado entre líneas */
 }
 
 .portfolio-button {
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 15px 30px; /* Aumentado para un botón más grande */
+  font-size: 18px; /* Aumentado de 14px a 18px */
   font-weight: bold;
   color: #fff;
   background-color: #007bff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px; /* Borde redondeado más pronunciado */
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra ajustada */
+  margin-top: 30px; /* Mayor separación arriba */
 }
 
 .portfolio-button:hover {
@@ -145,4 +138,64 @@
 .portfolio-button:active {
   background-color: #004080;
   transform: translateY(1px);
+}
+
+  /* Tamaño del título */
+  .portfolio-title {
+    /* width: 100%; */
+    /* font-size: 24px; */
+    font-weight: bold;
+    /* color: #333; */
+    display: inline-block;
+    border-right: 3px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s step-end infinite alternate;
+  }
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+
+
+@media (max-width: 768px) {
+  /* Redimensionar imagen de perfil */
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Redimensionar contenedor de íconos sociales */
+  .social-icons {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Redimensionar íconos sociales individuales */
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .portfolio-title {
+    /* width: 100%; */
+    /* font-size: 24px; */
+    font-size: 21px;
+  }
+
+  /* Tamaño de la descripción */
+  .portfolio-description {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  /* Tamaño del botón */
+  .portfolio-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }

@@ -1,5 +1,10 @@
 <div class="main-container">
+      <div class="container-title">
+        <h1 class="project-title">Proyectos Actuales</h1>
+    </div>
     <div class="container-projects">
+
+      
         <mat-tab-group>
             @for (item of elements; track $index) {
                 <mat-tab >
@@ -8,7 +13,7 @@
                         <img src="{{item.iconsrc}}" alt="{{item.title}}" class="img-icon-project" />
                         {{item.title}}
                     </ng-template>
-                    <ng-template matTabContent  #itemTabContent>
+                    <ng-template matTabContent  #itemTabContent style="height: 100%; display: flex; justify-content: center; align-items: center;">
                         
                         <div class="container-item">
                             <div class="container-scroll left-scroll">

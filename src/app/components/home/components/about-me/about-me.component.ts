@@ -35,14 +35,14 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
             </div>
           </div>
           <div class="container-name">
-            <h1 class="portfolio-title">Ing. Alan Cuevas Melendez</h1>
-          </div>
+          <h1 class="portfolio-title">{{ displayedText }}</h1>
+        </div>
         </div>
 
         <!-- Contenedor Derecho -->
         <div class="right-container">
           <p class="portfolio-description">
-            Hola, soy Alan. Soy Ingeniero en Informática con más de tres años de experiencia como Desarrollador Full Stack, especializado en aplicaciones web y móviles híbridas. Me enfoco en diseñar soluciones de alto rendimiento aplicando buenas prácticas, como Clean Code y arquitecturas escalables, para proyectos que integran tecnologías como Angular, Ionic, Laravel y .NET.
+             Ingeniero Informático con más de tres años de experiencia como Desarrollador Full Stack, especializado en aplicaciones web y móviles híbridas. Me enfoco en diseñar soluciones de alto rendimiento aplicando buenas prácticas, como Clean Code y arquitecturas escalables, para proyectos que integran tecnologías como Angular, Ionic, Laravel y .NET.
           </p>
           <button class="portfolio-button">Ir a Proyectos</button>
         </div>
@@ -55,6 +55,23 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 
   `,
   styleUrl: './about-me.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
-export class AboutMeComponent { }
+export class AboutMeComponent {
+  titleText: string = 'Ing. Alan Cuevas Melendez';
+  displayedText: string = ''; // Texto que se irá mostrando progresivamente
+  index: number = 0;
+  typingSpeed: number = 150; // Velocidad de tipeo en milisegundos
+
+  ngOnInit(): void {
+    this.startTypingEffect();
+  }
+
+  startTypingEffect(): void {
+    if (this.index < this.titleText.length) {
+      this.displayedText += this.titleText.charAt(this.index);
+      this.index++;
+      setTimeout(() => this.startTypingEffect(), this.typingSpeed);
+    }
+  }
+ }
