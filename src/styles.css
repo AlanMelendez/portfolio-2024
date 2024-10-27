@@ -45,7 +45,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Estilo del "track" de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  background: rgb(6, 21, 48); /* Color del fondo de la barra */
+  background: rgb(165, 165, 165); /* Color del fondo de la barra */
   border-radius: 10px;
 }
 
