@@ -57,6 +57,18 @@ export class CurrentProjectsComponent {
       ]
     },
     {
+      'title': 'Ionic',
+      'iconsrc': '/icons/ionic.png',
+      'projects': [
+        { image: '/icons/github.png', title: 'Proyecto Ionic 1', description: 'Descripción breve del proyecto 1 en Ionic.' },
+        { image: '/icons/github.png', title: 'Proyecto Ionic 2', description: 'Descripción breve del proyecto 2 en Ionic.' },
+        { image: '/icons/github.png', title: 'Proyecto Ionic 3', description: 'Descripción breve del proyecto 3 en Ionic.' },
+        { image: '/icons/github.png', title: 'Proyecto Ionic 4', description: 'Descripción breve del proyecto 4 en Ionic.' },
+        { image: '/icons/github.png', title: 'Proyecto Ionic 5', description: 'Descripción breve del proyecto 5 en Ionic.' },
+        { image: '/icons/github.png', title: 'Proyecto Ionic 6', description: 'Descripción breve del proyecto 6 en Ionic.' }
+      ]
+    },
+    {
       'title': 'ASP.NET',
       'iconsrc': '/icons/dotnet.png',
       'projects': [
@@ -67,7 +79,34 @@ export class CurrentProjectsComponent {
         { image: '/icons/github.png', title: 'Proyecto ASP.NET 5', description: 'Descripción breve del proyecto 5 en ASP.NET.' },
         { image: '/icons/github.png', title: 'Proyecto ASP.NET 6', description: 'Descripción breve del proyecto 6 en ASP.NET.' }
       ]
+    },
+    {
+      'title': 'Laravel',
+      'iconsrc': '/icons/laravel.png',
+      'projects': [
+        { image: '/icons/github.png', title: 'Proyecto Laravel 1', description: 'Descripción breve del proyecto 1 en Laravel.' },
+        { image: '/icons/github.png', title: 'Proyecto Laravel 2', description: 'Descripción breve del proyecto 2 en Laravel.' },
+        { image: '/icons/github.png', title: 'Proyecto Laravel 3', description: 'Descripción breve del proyecto 3 en Laravel.' },
+        { image: '/icons/github.png', title: 'Proyecto Laravel 4', description: 'Descripción breve del proyecto 4 en Laravel.' },
+        { image: '/icons/github.png', title: 'Proyecto Laravel 5', description: 'Descripción breve del proyecto 5 en Laravel.' },
+        { image: '/icons/github.png', title: 'Proyecto Laravel 6', description: 'Descripción breve del proyecto 6 en Laravel.' }
+      ],
+      
+
+    },
+    {
+      'title': 'NestJS',
+      'iconsrc': '/icons/nest.png',
+      'projects': [
+        { image: '/icons/github.png', title: 'Proyecto NestJS 1', description: 'Descripción breve del proyecto 1 en NestJS.' },
+        { image: '/icons/github.png', title: 'Proyecto NestJS 2', description: 'Descripción breve del proyecto 2 en NestJS.' },
+        { image: '/icons/github.png', title: 'Proyecto NestJS 3', description: 'Descripción breve del proyecto 3 en NestJS.' },
+        { image: '/icons/github.png', title: 'Proyecto NestJS 4', description: 'Descripción breve del proyecto 4 en NestJS.' },
+        { image: '/icons/github.png', title: 'Proyecto NestJS 5', description: 'Descripción breve del proyecto 5 en NestJS.' },
+        { image: '/icons/github.png', title: 'Proyecto NestJS 6', description: 'Descripción breve del proyecto 6 en NestJS.' }
+      ]
     }
+
   ]
 
 
