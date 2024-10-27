@@ -201,43 +201,121 @@ export class CurrentProjectsComponent {
         
       ]
     },
-    // {
-    //   'title': 'ASP.NET',
-    //   'iconsrc': '/icons/dotnet.png',
-    //   'projects': [
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 1', description: 'Descripción breve del proyecto 1 en ASP.NET.' },
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 2', description: 'Descripción breve del proyecto 2 en ASP.NET.' },
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 3', description: 'Descripción breve del proyecto 3 en ASP.NET.' },
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 4', description: 'Descripción breve del proyecto 4 en ASP.NET.' },
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 5', description: 'Descripción breve del proyecto 5 en ASP.NET.' },
-    //     { image: '/icons/github.png', title: 'Proyecto ASP.NET 6', description: 'Descripción breve del proyecto 6 en ASP.NET.' }
-    //   ]
-    // },
-    // {
-    //   'title': 'Laravel',
-    //   'iconsrc': '/icons/laravel.png',
-    //   'projects': [
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 1', description: 'Descripción breve del proyecto 1 en Laravel.' },
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 2', description: 'Descripción breve del proyecto 2 en Laravel.' },
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 3', description: 'Descripción breve del proyecto 3 en Laravel.' },
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 4', description: 'Descripción breve del proyecto 4 en Laravel.' },
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 5', description: 'Descripción breve del proyecto 5 en Laravel.' },
-    //     { image: '/icons/github.png', title: 'Proyecto Laravel 6', description: 'Descripción breve del proyecto 6 en Laravel.' }
-    //   ],
+    {
+      'title': 'ASP.NET',
+      'iconsrc': '/icons/dotnet.png',
+      'projects': [
+        {
+          image: '/icons/dotnet.png',
+          title: 'V380 CAMERA ',
+          description:
+            'Aplicacion OpenSource para capturar la imagenes de las camaras de seguridad IP locales y remotas, con la finalidad de tener un control de las camaras de seguridad.',
+          details: `Esta aplicacion abre la posibilidad para crear un sistema de seguridad con camaras IP, permitiendo la visualizacion de las camaras en tiempo real, ademas de poder capturar imagenes y grabar videos de las camaras de seguridad. De esta forma se creara un API para poder controlar las camaras de seguridad y una aplicacion con IONIC.`,  
+          website: 'https://github.com/AlanMelendez/V380PRO_CAMERA_CSHARP',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/dotnet.png',
+          title: 'Vialidad - MUNICIPIO DE CD. LERDO',
+          description:
+            'API en C# para la gestión de multas de tránsito, permitiendo a los agentes capturar infracciones y evidencias en tiempo real.',
+          details: `Esta API facilita el registro de multas de tránsito y captura de evidencias, con generación de tickets y sincronización en una plataforma de pagos. Proporciona acceso a reportes en tiempo real, optimizando la labor de los agentes en campo.`,
+          website: 'https://www.lerdo.gob.mx/ldop/',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/dotnet.png',
+          title: 'Parquímetros - MUNICIPIO DE CD. LERDO',
+          description:
+            'API en C# para la administración de multas de parquímetros, permitiendo el registro y actualización de infracciones.',
+          details: `Con esta API, los oficiales pueden gestionar infracciones de parquímetros, capturar evidencia y emitir tickets en tiempo real. La sincronización con la plataforma de pagos permite a los usuarios realizar pagos desde cualquier dispositivo.`,
+          website: 'https://www.lerdo.gob.mx/ldop/',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/dotnet.png',
+          title: 'Plazas y Mercados - MUNICIPIO DE CD. LERDO',
+          description:
+            'API en C# para la gestión de ventas e inventarios en plazas y mercados, facilitando el control de transacciones y reportes.',
+          details: `Esta API permite registrar ventas, gestionar inventarios y realizar cortes de caja en tiempo real. Sincroniza la información con la plataforma de pagos del municipio, facilitando el monitoreo y administración de cada sucursal.`,
+          website: 'https://www.lerdo.gob.mx/ldop/',
+          imgbg: 'white',
+        }
+      ]
+    },
+    {
+      'title': 'Laravel',
+      'iconsrc': '/icons/laravel.png',
+      'projects': [
+        {
+          image: 'https://www.lerdo.tecnm.mx/templates/tec19/images/logo_itsl.png',
+          title: 'SILAB - TECNM Campus Lerdo',
+          description:
+            'Sistema escolar interno para el control de prestamos en laboratorios dentro de la institucion. Dentro de este sistema se pueden ver, crear y liberar adeudos para distintos tramites dentro de la institucion.',
+          details: `Este proyecto es una plataforma web que permite a los estudiantes enviar 
+                    y rastrear solicitudes de admisión, y a los administradores gestionar estas 
+                    solicitudes de manera eficiente. Desarrollado con Angular para el frontend y 
+                    PHP/Laravel para el backend, incluye autenticación segura, roles de usuario, 
+                    y notificaciones por correo electrónico.`,
+          website: 'https://www.lerdo.tecnm.mx/',
+          imgbg: 'white',
+        },
+        
+        {
+          image: '/icons/laravel.png',
+          title: 'Concentrador Web BDKREST',
+          description:
+            'API en Laravel para gestionar y monitorear las transacciones en restaurantes, incluyendo ventas, inventarios y asistencia en tiempo real.',
+          details: `Esta API permite registrar transacciones, controlar inventarios y generar reportes por sucursal en tiempo real. Almacenado en un VPS con Linux, ofrece una solución autónoma y segura para los datos de cada restaurante.`,
+          website: 'https://cw.bdkrest.com/login',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/laravel.png',
+          title: 'Concentrador Web BDKGYM',
+          description:
+            'API en Laravel para administración de gimnasios, permitiendo monitorear membresías, asistencias y ventas de productos y servicios.',
+          details: `Esta API gestiona membresías, control de asistencia y ventas de productos en gimnasios, con la opción de filtrar por sucursal. Cada gimnasio utiliza un VPS Linux para almacenamiento seguro de datos, accesible en tiempo real desde cualquier dispositivo.`,
+          website: 'https://cw.bdkgym.com/login',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/laravel.png',
+          title: 'Concentrador Web BDKSPA',
+          description:
+            'API en Laravel para la gestión de spas, permitiendo la administración de citas, ventas y control de inventario de productos y servicios.',
+          details: `Esta API administra citas y servicios, control de inventario y reportes financieros en spas, con acceso remoto y filtros por sucursal. Cada negocio utiliza un VPS Linux para su base de datos, proporcionando seguridad y disponibilidad.`,
+          website: 'https://cw.bdkspa.com/login',
+          imgbg: 'white',
+        },
+        {
+          image: '/icons/laravel.png',
+          title: 'Concentrador Web BDKTINT',
+          description:
+            'API en Laravel para monitoreo de operaciones en tintorerías, gestionando la recepción y entrega de prendas, ventas y reportes.',
+          details: `API para control de servicios en tintorerías, permitiendo gestionar la recepción de prendas, actualización del estado, y facturación en tiempo real. Los datos se almacenan en un VPS Linux de cada negocio, permitiendo un monitoreo completo de las operaciones.`,
+          website: 'https://cw.bdktint.com/login',
+          imgbg: 'white',
+        }
+       
+      ],
 
-    // },
-    // {
-    //   'title': 'NestJS',
-    //   'iconsrc': '/icons/nest.png',
-    //   'projects': [
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 1', description: 'Descripción breve del proyecto 1 en NestJS.' },
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 2', description: 'Descripción breve del proyecto 2 en NestJS.' },
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 3', description: 'Descripción breve del proyecto 3 en NestJS.' },
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 4', description: 'Descripción breve del proyecto 4 en NestJS.' },
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 5', description: 'Descripción breve del proyecto 5 en NestJS.' },
-    //     { image: '/icons/github.png', title: 'Proyecto NestJS 6', description: 'Descripción breve del proyecto 6 en NestJS.' }
-    //   ]
-    // }
+    },
+    {
+      'title': 'NestJS',
+      'iconsrc': '/icons/nest.png',
+      'projects': [
+        {
+          image: '/icons/nest.png',
+          title: 'API OCR CNOP - APD',
+          description:
+            'API para captura y procesamiento de credenciales con IA, usando Butler para extracción de datos y sincronización en SQL Azure.',
+          details: `Esta API permite la digitalización de credenciales mediante inteligencia artificial, extrayendo datos y almacenándolos en SQL Azure para acceso seguro y sincronización en más de cuatro servidores. Soporta un alto volumen de usuarios y operaciones distribuidas.`,
+          website: 'https://web.grupoapd.mx/',
+          imgbg: 'white',
+        }
+      ]
+    }
   ];
 
   selectedProject: any;
