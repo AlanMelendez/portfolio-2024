@@ -1,3 +1,4 @@
+/* Contenedor Principal */
 .portfolio-container {
   width: 100%;
   display: flex;
@@ -6,7 +7,6 @@
   text-align: center;
   padding: 20px;
   background-color: rgb(6, 21, 48);
-
 }
 
 /* Contenedor Izquierdo */
@@ -16,11 +16,13 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.container-img{
+
+.container-img {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:  10px;
+  padding: 10px;
 }
 
 .profile-image {
@@ -30,18 +32,64 @@
   object-fit: cover;
   margin-bottom: 20px;
   background-color: white;
-  box-shadow: 1px 0px 46px -10px rgba(255,255,255,0.51);
-  -webkit-box-shadow: 1px 0px 46px -10px rgba(255,255,255,0.51);
-  -moz-box-shadow: 1px 0px 46px -10px rgba(255,255,255,0.51);
+  box-shadow: 1px 0px 46px -10px rgba(255, 255, 255, 0.51);
   padding: 5px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons a {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 0px 46px -5px rgba(255, 255, 255, 0.51);
+  img{
+    border-radius: 30%;
+  }
 
 }
 
+.social-icons a:nth-child(1) { /* GitHub */
+  top: 86%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-icons a:nth-child(2) { /* Gmail */
+  top: 89%;
+  left: 19%;
+  transform: translate(28%, -50%);
+ 
+}
+
+.social-icons a:nth-child(3) { /* LinkedIn */
+  top: 89%;
+  right: 20%;
+  transform: translate(-20%, -50%);
+}
+
+/* Estilos de los Iconos Sociales */
+.img-social {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 5px;
+}
+
+/* Estilos para Título */
 .portfolio-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
   margin-top: 15px;
@@ -50,38 +98,6 @@
   color: #f0eded;
 }
 
-.social-links {
-  display: flex;
-  gap: 10px;
-  margin-top: 5px;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: background-color 0.3s, color 0.3s;
-  background-color: white;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.social-links a:hover {
-  background-color: #f0f0f0;
-  color: #000;
-}
-.img-social{
-  background-color: white;
-  border-radius: 50%;
-
-}
 /* Contenedor Derecho */
 .right-container {
   max-width: 500px;
@@ -92,6 +108,7 @@
   color: #555;
   text-align: justify;
 }
+
 .portfolio-button {
   padding: 10px 20px;
   font-size: 14px;
@@ -115,5 +132,3 @@
   background-color: #004080;
   transform: translateY(1px);
 }
-
-/* Layout para pantallas grandes */

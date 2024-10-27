@@ -45,17 +45,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Estilo del "track" de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color del fondo de la barra */
+  background: rgb(6, 21, 48); /* Color del fondo de la barra */
   border-radius: 10px;
 }
 
 /* Estilo de la barra de desplazamiento (scroll thumb) */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color de la barra */
+  background: rgb(6, 21, 48); /* Color de la barra */
   border-radius: 10px;
 }
 
 /* Cambia el color de la barra al hacer hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color de la barra al pasar el cursor */
+  background: rgba(6, 21, 48, 0.836); /* Color de la barra al pasar el cursor */
 }

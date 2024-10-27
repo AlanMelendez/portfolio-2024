@@ -129,6 +129,8 @@
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #20295c;
+
 }
 
 .styled-button::after {
@@ -146,7 +148,7 @@
 }
 
 .styled-button:hover {
-  background-color: #2c387e;
+  background-color: rgb(6, 21, 48);
   transform: translateY(-2px);
 }
 
