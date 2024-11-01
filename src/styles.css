@@ -64,3 +64,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .text-bandera{
   color: white !important;
 }
+/* styles.css */
+
+.section-blue {
+  background-color: blue;
+}
+
+.section-white {
+  background-color: white;
+}
+
+.navbar-blue {
+  background-color: blue;
+}
+
+.navbar-white {
+  background-color: white;
+}

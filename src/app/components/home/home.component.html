@@ -4,11 +4,12 @@
     <!-- Poner "openeed dentro del mat-sidenav para poder dejarla abierta siempre" -->
     <mat-sidenav
       #drawer
-      class="sidenav color-primario bg-blue-black  "
+      class="sidenav color-primario "
       style="width: 300px; padding: 5px; "
+      [ngClass]="navbarColor"
       #sidenav>
-        <mat-toolbar class="color-primario toolbar-1 ">
-            <div class="toolbar-2"
+        <mat-toolbar class="color-primario toolbar-1 "  [ngClass]="navbarColor">
+            <div class="toolbar-2"  [ngClass]="navbarColor"
         >
             <img
             src="/icono.png"
@@ -22,7 +23,7 @@
     
     
         </mat-toolbar>
-        <div class="user-panel ">
+        <div class="user-panel "  [ngClass]="navbarColor">
 
             <div class="info-user">
             <a class="text-user-name"></a>
@@ -30,7 +31,7 @@
         </div>
 
         <mat-nav-list>
-        <div class="container-fields-2 ">
+        <div class="container-fields-2 "  [ngClass]="navbarColor">
           @for (field of fields; track $index) {
           <div class="button-fields underline-animation">
             <div class="icon-field">
@@ -46,7 +47,7 @@
     </mat-sidenav>
   
     <mat-sidenav-content class="parent-sticky">
-      <mat-toolbar class="container-toolbar toolbar-principal">
+      <mat-toolbar class="container-toolbar toolbar-principal"  [ngClass]="navbarColor">
   
         <div class="container-menu">
           <button
@@ -137,17 +138,17 @@
       </mat-toolbar>
 
       <div class="main-container">
-        <app-about-me></app-about-me>
+        <app-about-me id="section0"  ></app-about-me>
 
-        <app-current-projects/>
-        <!-- <app-about-me></app-about-me> -->
+        <app-current-projects class="mt-20" id="section1" />
 
-        <app-me-abilities/>
+        <app-me-abilities id="section2"/>
+
+        <div class="container" id="section3"></div>
 
       </div>
 
 
-      <!-- <app-footer class="footer-toolbar"></app-footer> -->
 
     </mat-sidenav-content>
   

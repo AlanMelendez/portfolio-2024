@@ -114,6 +114,8 @@
   color: #ccc; /* Color ajustado para mejor contraste */
   text-align: justify;
   line-height: 1.6; /* Mayor espaciado entre líneas */
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
 .portfolio-button {

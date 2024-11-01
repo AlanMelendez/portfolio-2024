@@ -372,3 +372,48 @@
     }
    }
   
+
+
+.section-blue {
+  background-color: blue;
+}
+
+.section-white {
+  background-color: white;
+}
+
+.navbar-blue {
+  background-color: blue;
+}
+
+.navbar-white {
+  background-color: white;
+  color:  rgb(6, 21, 48) !important;
+
+  /* Aplicamos el mismo coor a todos los elmentos dentro de el navbar */
+  *{
+    /* color:  rgb(6, 21, 48) !important; */
+  }
+  .underline-animation{
+    color: rgb(6, 21, 48) !important;
+  }
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(6, 21, 48) !important;
+    transition: width 0.3s ease-in-out;
+  }
+  .text-bandera{
+    color: rgb(6, 21, 48) !important;
+    background-color: white !important;
+  }
+  .container-changelang {
+    color: rgb(6, 21, 48) !important;
+    background-color: white !important;
+  }
+  
+}

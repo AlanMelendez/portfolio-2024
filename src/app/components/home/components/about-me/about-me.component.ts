@@ -42,9 +42,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
         <!-- Contenedor Derecho -->
         <div class="right-container">
           <p class="portfolio-description">
-             Ingeniero Informático con más de tres años de experiencia como Desarrollador Full Stack, especializado en aplicaciones web y móviles híbridas. Me enfoco en diseñar soluciones de alto rendimiento aplicando buenas prácticas, como Clean Code y arquitecturas escalables, para proyectos que integran tecnologías como Angular, Ionic, Laravel y .NET.
+             <b>Ingeniero Informático </b>con más de tres años de experiencia como <b>Desarrollador Full Stack</b> , especializado en aplicaciones web y móviles híbridas. Me enfoco en diseñar soluciones de alto rendimiento aplicando buenas prácticas, como Clean Code y arquitecturas escalables, para proyectos que integran tecnologías como Angular, Ionic, Laravel y .NET.
           </p>
-          <button class="portfolio-button">Ir a Proyectos</button>
+          <!-- <button class="portfolio-button">dot</button> -->
         </div>
     </div>
   </div>

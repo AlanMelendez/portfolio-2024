@@ -4,6 +4,7 @@ import {
   Component,
   ElementRef,
   inject,
+  Input,
   QueryList,
   ViewChild,
   ViewChildren,
@@ -38,7 +39,10 @@ import {
   styleUrl: './current-projects.component.css',
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class CurrentProjectsComponent {
+export class CurrentProjectsComponent { 
+
+  @Input() navbarColor: string = 'navbar-blue';
+
   readonly dialog = inject(MatDialog);
   sanitizer = inject(DomSanitizer);
   trustedUrl!: SafeResourceUrl;

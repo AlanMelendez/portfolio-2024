@@ -96,7 +96,7 @@ width: 150px !important;
 }
 .container-abilites{
   background-color: rgba(6, 21, 48, 0.952);
-  
+  /* background-color: rgb(6, 21, 48); */
   /* 
   margin-bottom: 100px; */
   padding: 50px;
