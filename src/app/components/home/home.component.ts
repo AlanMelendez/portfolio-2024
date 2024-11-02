@@ -54,11 +54,11 @@ export class HomeComponent {
     }
     //Evaluamos cuando llega el final el scroll 
     if (section1Position && section1Position.top <= window.innerHeight && section1Position.bottom >= 0) {
-      this.navbarColor = 'navbar-white'; // Color para la primera sección
+      this.navbarColor = 'bg-blue-black'; // Color para la primera sección
     }
     //Evaluamos cuando llega el final el scroll 
     if (section2Position && section2Position.top <= window.innerHeight && section2Position.bottom >= 0) {
-      this.navbarColor = 'bg-blue-black'; // Color para la primera sección
+      this.navbarColor = 'navbar-white'; // Color para la primera sección
     }
 
     //eVALUAMOS EL SECTION 1

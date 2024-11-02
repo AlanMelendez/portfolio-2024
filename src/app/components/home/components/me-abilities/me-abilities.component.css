@@ -64,6 +64,7 @@ width: 150px !important;
   font-size: 15px;
   font-weight: 400;
   margin: 5px;
+  min-width: 155px;
 
 }
 .btn-cards-item::before{
@@ -95,7 +96,7 @@ width: 150px !important;
 
 }
 .container-abilites{
-  background-color: rgba(6, 21, 48, 0.952);
+  background-color: rgb(6, 21, 48) !important;
   /* background-color: rgb(6, 21, 48); */
   /* 
   margin-bottom: 100px; */

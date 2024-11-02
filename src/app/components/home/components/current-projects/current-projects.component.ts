@@ -345,7 +345,7 @@ export class CurrentProjectsComponent {
   // Inicia el desplazamiento continuo
   startScrolling(direction: 'left' | 'right'): void {
     const element = this.scrollCardContainer.nativeElement;
-    const scrollAmount = 20; // Ajusta la cantidad de desplazamiento según sea necesario
+    const scrollAmount = 120; // Ajusta la cantidad de desplazamiento según sea necesario
     this.stopScrolling(); // Asegura que no haya intervalos previos activos
 
     this.scrollInterval = setInterval(() => {
@@ -354,7 +354,7 @@ export class CurrentProjectsComponent {
       } else {
         element.scrollLeft += scrollAmount;
       }
-    }, 5); // Controla la velocidad de desplazamiento ajustando el intervalo en milisegundos
+    }, 1); // Controla la velocidad de desplazamiento ajustando el intervalo en milisegundos
   }
 
   // Detiene el desplazamiento continuo

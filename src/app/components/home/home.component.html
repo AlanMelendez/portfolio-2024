@@ -55,8 +55,9 @@
             aria-label="Toggle sidenav"
             mat-icon-button
             (click)="drawer.toggle()"
+            [ngClass]="navbarColor"
           >
-            <mat-icon aria-label="Side nav toggle icon" style="color: white;">menu</mat-icon>
+            <mat-icon aria-label="Side nav toggle icon" style="color: white;" [ngClass]="navbarColor">menu</mat-icon>
           </button>
         </div>
         <div class="container-icon">
@@ -64,6 +65,7 @@
             src="/icono.png"
             class="img-icon-personal"
             alt="img-source"
+            style="margin-left: 50px;"
           />
           <!-- <div>
             <p class="title-icon">
@@ -99,7 +101,7 @@
                 _ngcontent-ng-c304931543=""
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 3 2"
-                class="w-5 h-5 rounded-full me-3 "
+                class="w-5 h-5 rounded-full  " style="margin: 0 !important;"
               >
                 <rect
                   _ngcontent-ng-c304931543=""
@@ -129,7 +131,7 @@
                   fill="#006847"
                 ></circle>
               </svg>
-              <span class="text-bandera">Español (MX)</span>
+              <span class="text-bandera" [ngClass]="navbarColor">Español (MX)</span>
               <!----><!---->
             </button>
           </div>
@@ -140,7 +142,8 @@
       <div class="main-container">
         <app-about-me id="section0"  ></app-about-me>
 
-        <app-current-projects class="mt-20" id="section1" />
+        <div class="container"  id="section1" style="padding: 30px;"></div>
+        <app-current-projects  />
 
         <app-me-abilities id="section2"/>
 
