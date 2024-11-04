@@ -47,7 +47,7 @@ export class CurrentProjectsComponent {
   sanitizer = inject(DomSanitizer);
   trustedUrl!: SafeResourceUrl;
 
-  titleText: string = 'Proyectos Actuales';
+  titleText: string = 'Proyectos Realizados'; // Texto que se irá mostrando progresivamente
   displayedText: string = ''; // Texto que se irá mostrando progresivamente
   index: number = 0;
   typingSpeed: number = 150; // Velocidad de tipeo en milisegundos

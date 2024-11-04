@@ -417,3 +417,12 @@
   }
   
 }
+
+.container{
+  padding: 50px; background-color: white;
+}
+
+.container-2{
+  padding: 50px;
+  background-color: rgb(6, 21, 48) !important;
+}
