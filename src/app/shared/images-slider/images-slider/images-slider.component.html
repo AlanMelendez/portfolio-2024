@@ -1,0 +1,69 @@
+<div class="main-container">
+    <div class="container-projects">
+      <mat-tab-group (selectedTabChange)="onTabChange($event)">
+        @for (item of elements; track $index) {
+          @if (item.numberPictures != 0) {
+            <mat-tab>
+              <ng-template mat-tab-label class="template-label-icon">
+                <img
+                  src="{{ item.iconsrc }}"
+                  alt="{{ item.title }}"
+                  class="img-icon-project"
+                />
+                {{ item.title }}
+              </ng-template>
+              <ng-template
+                matTabContent
+                style="display: flex; justify-content: center; align-items: center;"
+              >
+                <div class="container-item">
+                  <div
+                    #carousel
+                    id="carouselExampleControls-{{ $index }}"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    data-bs-interval="5000"
+                  >
+                    <!-- Indicators/dots -->
+                    <div
+                      class="carousel-indicators"
+                      id="div_indicadores-{{ $index }}"
+                    ></div>
+  
+                    <!-- The slideshow/carousel -->
+                    <div
+                      class="carousel-inner"
+                      id="div_pub-{{ $index }}"
+                    ></div>
+  
+                    <!-- Left and right controls/icons -->
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      attr.data-bs-target="#carouselExampleControls-{{ $index }}"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                      ></span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      attr.data-bs-target="#carouselExampleControls-{{ $index }}"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </ng-template>
+            </mat-tab>
+          }
+        }
+      </mat-tab-group>
+    </div>
+  </div>
+  
