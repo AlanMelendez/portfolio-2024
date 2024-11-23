@@ -25,6 +25,7 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import { ImagesSliderComponent } from "../../../../shared/images-slider/images-slider/images-slider.component";
 @Component({
   selector: 'app-current-projects',
   standalone: true,
@@ -34,7 +35,8 @@ import {
     MatCardModule,
     MatIconModule,
     MatDialogModule,
-  ],
+    ImagesSliderComponent
+],
   templateUrl: './current-projects.component.html',
   styleUrl: './current-projects.component.css',
   changeDetection: ChangeDetectionStrategy.Default,
@@ -78,6 +80,20 @@ export class CurrentProjectsComponent {
       title: 'Angular',
       iconsrc: '/icons/angular.png',
       projects: [
+        {
+          image: 'https://www.bdksistemas.com.mx/build/img/BDKREST/LOGO_BCO.avif',
+          title: 'Comandeo Meseros - BDK',
+          description:
+            'Sistema de comandas para restaurantes, con funciones de gestión de mesas y pedidos, accesible desde cualquier dispositivo.',
+          details: `Este proyecto es una sistema web (interno para cada cliente) que permite a los meseros enviar y gestionar comandas de manera eficiente,
+                    con funciones de gestión de mesas y pedidos. El sistema tambien se conecta con el MENU DIGITAL BDK para mostrar las categorias, detalles actuales de mesa e informacion de pedido en general.
+                    Desarrollado con Angular para el frontend y PHP/Laravel para el backend, servidor local con xampp y dockerfile para la instalacion en contenedores, a eleccion de usuario.`,
+          website: '',
+          imgbg: 'black',
+          tabletMode: 13,
+          phoneMode: 11,
+          desktopMode: [],
+        },
         
         {
           image: 'https://www.ujed.mx/img/header/logo-ujed.2.png',
