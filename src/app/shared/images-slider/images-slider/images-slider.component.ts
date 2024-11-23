@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, Renderer2 } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,34 +20,48 @@ import { MatTabChangeEvent, MatTabsModule } from '@angular/material/tabs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImagesSliderComponent {
-  elements = [
-    {
-      title: 'Mobile Version',
-      iconsrc: '/icons/phone.png',
-      modulename: 'phone',
-      folderPictures: '/assets/MODULO_MESEROS_BDKREST',
-      numberPictures: 13,
-      pictures: this.createArrayFromNumber(13),
-    },
-    {
-      title: 'Tablet Version',
-      iconsrc: '/icons/tableta.png',
-      folderPictures: '/assets/MODULO_MESEROS_BDKREST',
-      numberPictures: 11,
-      modulename: 'tableta',
-      pictures: this.createArrayFromNumber(11),
-    },
-    {
-      title: 'Desktop Version',
-      iconsrc: '/icons/tableta.png',
-      folderPictures: '/assets/MODULO_MESEROS_BDKREST',
-      numberPictures: 11,
-      modulename: 'desktop',
-      pictures: this.createArrayFromNumber(0),
-    },
-  ];
+
+  @Input() elementos: Array<{ folderPictures: string; numberPictures: number }> = [];
+  elements: Array<{
+    title: string;
+    iconsrc: string;
+    modulename: string;
+    folderPictures: string;
+    numberPictures: number;
+    pictures: number[];
+  }> = [];
+
+ 
 
   ngOnInit(): void {
+
+     // Inicializa `elements` basándote en `elementos`
+    this.elements = [
+      {
+        title: 'Mobile Version',
+        iconsrc: '/icons/phone.png',
+        modulename: 'phone',
+        folderPictures: this.elementos[0]?.folderPictures || '',
+        numberPictures: this.elementos[0]?.numberPictures || 0,
+        pictures: this.createArrayFromNumber(this.elementos[0]?.numberPictures || 0),
+      },
+      {
+        title: 'Tablet Version',
+        iconsrc: '/icons/tableta.png',
+        modulename: 'tableta',
+        folderPictures: this.elementos[1]?.folderPictures || '',
+        numberPictures: this.elementos[1]?.numberPictures || 0,
+        pictures: this.createArrayFromNumber(this.elementos[1]?.numberPictures || 0),
+      },
+      {
+        title: 'Desktop Version',
+        iconsrc: '/icons/desktop.png',
+        modulename: 'desktop',
+        folderPictures: this.elementos[2]?.folderPictures || '',
+        numberPictures: this.elementos[2]?.numberPictures || 0,
+        pictures: this.createArrayFromNumber(this.elementos[2]?.numberPictures || 0),
+      },
+    ];
     // Inicializa el contenido del primer tab (Mobile Version)
     setTimeout(() => {
       this.onTabChange({ index: 0, tab: null } );
@@ -93,6 +107,9 @@ export class ImagesSliderComponent {
         this.renderer.setAttribute(img, 'alt', `${element.title} ${pictureIndex}`);
         this.renderer.addClass(img, 'd-block');
         this.renderer.setStyle(img, 'width', '100%');
+        this.renderer.setStyle(img, 'padding', '100px');
+
+
   
         this.renderer.appendChild(div, img);
         this.renderer.appendChild(divPub, div);
