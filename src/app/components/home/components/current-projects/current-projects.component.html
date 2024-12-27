@@ -4,26 +4,26 @@
     </div>
     <div class="container-projects">
 
-      
+
         <mat-tab-group>
             @for (item of elements; track $index) {
                 <mat-tab >
-              
+
                     <ng-template mat-tab-label class="template-label-icon">
-                        <img src="{{item.iconsrc}}" alt="{{item.title}}" 
-                   
+                        <img src="{{item.iconsrc}}" alt="{{item.title}}"
+
                         class="img-icon-project" />
                         {{item.title}}
                     </ng-template>
                     <ng-template matTabContent  #itemTabContent style="height: 100%; display: flex; justify-content: center; align-items: center;">
-                        
+
                         <div class="container-item">
                             <div class="container-scroll left-scroll">
                                 <!-- create mat-icon row left -->
                                 <button mat-icon-button (mousedown)="startScrolling('left')" (mouseup)="stopScrolling()" (mouseleave)="stopScrolling()">
                                   <mat-icon>chevron_left</mat-icon>
                                   </button>
-          
+
                               </div>
                             <div class="card-container scroll-suave" #scrollCardContainer>
                                 <mat-card class="project-card" *ngFor="let project of item.projects">
@@ -42,8 +42,8 @@
                                      <div class="container-card-button">
                                         <button mat-button class="styled-button" (click)="openModal(project)">Ver más</button>
                                     </div>
-                                      
-                                  
+
+
                                 </mat-card>
                               </div>
                               <div class="container-scroll right-scroll">
@@ -53,13 +53,13 @@
                                 </button>
                             </div>
                         </div>
-                       
+
                     </ng-template>
-                  
+
                 </mat-tab>
             }
           </mat-tab-group>
-    
+
           <ng-template #projectModal let-data>
             <h2 mat-dialog-title class="modal-title" >{{ selectedProject?.title }}</h2>
             <mat-dialog-content class="modal-content">
@@ -84,15 +84,15 @@
               <div class="iframe-website">
                 <!-- <iframe *ngIf="trustedUrl" [src]="trustedUrl" frameborder="0"></iframe> -->
               </div>
-              
+
             </mat-dialog-content>
             <mat-dialog-actions align="end">
               <button mat-button (click)="closeModal()">Cerrar</button>
             </mat-dialog-actions>
           </ng-template>
-          
-          
-          
-    
+
+
+
+
     </div>
 </div>

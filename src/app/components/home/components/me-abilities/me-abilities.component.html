@@ -1,115 +1,94 @@
-<div class=" container-abilites" id="abilites-container">
-    <div class="text-center  aos-init aos-animate" style="margin-top: 100px; margin-bottom: 50px;">
-      <span class="title text-center pgray">Abilites.</span>
-    </div>
-    <hr
-      width="100%"
-      class="pgray"
-      style="display: flex; justify-content: center; align-items: center"
-    />
-    <br />
-    <div class="row">
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/programacion.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Programming Languages</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">C#</button>
-          <button class="btn btn-cards-item">JavaScript</button>
-          <button class="btn btn-cards-item">PHP</button>
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.238095s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/ux.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Front-end</div>
-        <hr width="100%" class="pgray" />
-  
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">HTML5</button>
-          <button class="btn btn-cards-item">CSS3</button>
-          <button class="btn btn-cards-item">Bootstrap</button>
-          <button class="btn btn-cards-item">Angula rMaterial</button>
-          <button class="btn btn-cards-item">Tailwind</button>
+<div id="abilities-container" class="container mx-auto px-4 py-10 bg-gray-50">
+  <!-- Título principal con animación -->
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-extrabold text-gray-800 mb-2 animate-fade-in">
+      🚀 Abilities
+    </h2>
+    <p class="text-gray-500">Explore my technical skillset</p>
+  </div>
 
-        </div>
+  <hr class="border-t border-gray-300 mb-8 animate-fade-in" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card Base -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/programacion.png" alt="Programming" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
       </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.47619s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/framework.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Frameworks</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Angular 18</button>
-          <button class="btn btn-cards-item">Ionic 7</button>
-          <button class="btn btn-cards-item">.Net 8</button>
-          <button class="btn btn-cards-item">Laravel 11</button>
-          <button class="btn btn-cards-item">NestJS</button>
-          <button class="btn btn-cards-item">TypeScript</button>
-        </div>
+      <h3 class="text-xl font-semibold mb-2">💻 Programming Languages</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">C#</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">JavaScript</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">PHP</button>
       </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.714286s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/db.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Databases</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">MySQL</button>
-          <button class="btn btn-cards-item">SQL Server</button>
-        </div>
+    </div>
+
+    <!-- Front-end -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/ux.png" alt="Front-end" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
       </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.952381s"
-      >
-        <div class="bg-div">
-          <img
-            class="img-cards-habilites"
-            src="/assets/sistema-operativo.png"
-            alt=""
-          />
-        </div>
-        <div class="title2 pt-2">Development Tools</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Git</button>
-          <button class="btn btn-cards-item">Postman</button>
-          <button class="btn btn-cards-item">Docker</button>
-          <button class="btn btn-cards-item">GNU/Linux</button>
-        </div>
+      <h3 class="text-xl font-semibold mb-2">🎨 Front-end</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">HTML5</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">CSS3</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Tailwind</button>
       </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.952381s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/cpu.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Electronic</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Arduino</button>
-          <button class="btn btn-cards-item">STM-32</button>
-          <button class="btn btn-cards-item">Raspberry Pi</button>
-        </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/framework.png" alt="Frameworks" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
+      </div>
+      <h3 class="text-xl font-semibold mb-2">🛠️ Frameworks</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Angular</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Laravel</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">NestJS</button>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/db.png" alt="Databases" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
+      </div>
+      <h3 class="text-xl font-semibold mb-2">📊 Databases</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">MySQL</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">SQL Server</button>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/sistema-operativo.png" alt="Tools" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
+      </div>
+      <h3 class="text-xl font-semibold mb-2">🛡️ Tools</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Git</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Docker</button>
+      </div>
+    </div>
+
+    <!-- Electronics -->
+    <div class="group text-center p-6 bg-white shadow-lg rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br from-gray-100 to-gray-200">
+      <div class="mb-4">
+        <img src="/assets/cpu.png" alt="Electronics" class="w-24 h-24 mx-auto group-hover:rotate-6 transition-transform duration-500" />
+      </div>
+      <h3 class="text-xl font-semibold mb-2">🤖 Electronics</h3>
+      <hr class="border-t border-gray-200 mb-4" />
+      <div class="flex flex-wrap justify-center gap-2">
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Arduino</button>
+        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition">Raspberry Pi</button>
       </div>
     </div>
   </div>
-  
+</div>
