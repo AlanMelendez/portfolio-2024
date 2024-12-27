@@ -46,7 +46,7 @@ import {
           <div class="container-name mt-3 mb-2">
             <!-- Nombre y Cargo -->
             <h1
-              class="text-4xl md:text-lg font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
+              class="text-lg md:text-4xl font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
             >
               ¡Hola! Soy Alan Cuevas Melendez
             </h1>
