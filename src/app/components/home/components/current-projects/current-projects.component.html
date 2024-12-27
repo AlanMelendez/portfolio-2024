@@ -74,7 +74,7 @@
               </div>
 
               <div class="images-component mt-3">
-                <app-images-slider  [elementos]="[
+                <app-images-slider *ngIf="selectedProject?.title === 'Comandeo Meseros - BDK'"  [elementos]="[
                 { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 11 },
                 { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 13 },
                 { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 0 }
