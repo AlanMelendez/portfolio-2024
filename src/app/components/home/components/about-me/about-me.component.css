@@ -201,9 +201,6 @@
     font-size: 14px;
   }
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Animación de escritura */
 @keyframes typing {
