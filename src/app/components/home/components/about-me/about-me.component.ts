@@ -46,7 +46,7 @@ import {
           <div class="container-name mt-3 mb-2">
             <!-- Nombre y Cargo -->
             <h1
-              class="text-4xl md:text-5xl font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
+              class="text-4xl md:text-lg font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
             >
               ¡Hola! Soy Alan Cuevas Melendez
             </h1>
@@ -69,7 +69,8 @@ import {
           </p>
           <div class="flex justify-center">
             <a
-              href="/cv.pdf"
+              href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
+              target="_blank"
               download
               class="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:scale-105 transition-transform duration-300"
             >
