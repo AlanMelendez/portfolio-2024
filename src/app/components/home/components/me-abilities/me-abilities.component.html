@@ -1,115 +1,29 @@
-<div class=" container-abilites" id="abilites-container">
-    <div class="text-center  aos-init aos-animate" style="margin-top: 100px; margin-bottom: 50px;">
-      <span class="title text-center pgray">Abilites.</span>
-    </div>
-    <hr
-      width="100%"
-      class="pgray"
-      style="display: flex; justify-content: center; align-items: center"
-    />
-    <br />
-    <div class="row">
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/programacion.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Programming Languages</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">C#</button>
-          <button class="btn btn-cards-item">JavaScript</button>
-          <button class="btn btn-cards-item">PHP</button>
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.238095s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/ux.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Front-end</div>
-        <hr width="100%" class="pgray" />
-  
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">HTML5</button>
-          <button class="btn btn-cards-item">CSS3</button>
-          <button class="btn btn-cards-item">Bootstrap</button>
-          <button class="btn btn-cards-item">Angula rMaterial</button>
-          <button class="btn btn-cards-item">Tailwind</button>
+<div class="container mx-auto px-6 py-16">
+  <h2 class="text-3xl font-semibold text-center text-gray-800 dark:text-white">
+    Abilities
+  </h2>
+  <div class="w-24 h-1 bg-blue-500 mx-auto my-4"></div>
 
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.47619s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/framework.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Frameworks</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Angular 18</button>
-          <button class="btn btn-cards-item">Ionic 7</button>
-          <button class="btn btn-cards-item">.Net 8</button>
-          <button class="btn btn-cards-item">Laravel 11</button>
-          <button class="btn btn-cards-item">NestJS</button>
-          <button class="btn btn-cards-item">TypeScript</button>
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.714286s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/db.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Databases</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">MySQL</button>
-          <button class="btn btn-cards-item">SQL Server</button>
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.952381s"
-      >
-        <div class="bg-div">
-          <img
-            class="img-cards-habilites"
-            src="/assets/sistema-operativo.png"
-            alt=""
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+    <div 
+      *ngFor="let ability of abilities" 
+      class="flex flex-col items-center p-6 bg-white shadow-lg rounded-xl transition-transform transform hover:scale-105 dark:bg-gray-800"
+    >
+      <img [src]="ability.image" [alt]="ability.title" class="w-20 h-20 object-contain mb-4" />
+      <h3 class="text-xl font-medium text-gray-700 dark:text-white">{{ ability.title }}</h3>
+      <div class="w-16 h-1 bg-gray-300 my-2"></div>
+      <div class="flex flex-wrap justify-center gap-3 mt-3">
+        <div 
+          *ngFor="let skill of ability.skills" 
+          class="flex flex-col items-center"
+        >
+          <img 
+            [src]="skill.icon" 
+            [alt]="skill.name" 
+            class="w-12 h-12 object-contain"
           />
-        </div>
-        <div class="title2 pt-2">Development Tools</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Git</button>
-          <button class="btn btn-cards-item">Postman</button>
-          <button class="btn btn-cards-item">Docker</button>
-          <button class="btn btn-cards-item">GNU/Linux</button>
-        </div>
-      </div>
-      <div
-        class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4 aos-init aos-animate"
-        style="transition-delay: 0.952381s"
-      >
-        <div class="bg-div">
-          <img class="img-cards-habilites" src="/assets/cpu.png" alt="" />
-        </div>
-        <div class="title2 pt-2">Electronic</div>
-        <hr width="100%" class="pgray" />
-        <div class="btn-cards">
-          <button class="btn btn-cards-item">Arduino</button>
-          <button class="btn btn-cards-item">STM-32</button>
-          <button class="btn btn-cards-item">Raspberry Pi</button>
         </div>
       </div>
     </div>
   </div>
-  
+</div>

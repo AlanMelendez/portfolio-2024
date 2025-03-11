@@ -107,7 +107,7 @@ export class ImagesSliderComponent {
         this.renderer.setAttribute(img, 'alt', `${element.title} ${pictureIndex}`);
         this.renderer.addClass(img, 'd-block');
         this.renderer.setStyle(img, 'width', '100%');
-        this.renderer.setStyle(img, 'padding', '100px');
+        this.renderer.setStyle(img, 'padding', '20px');
 
 
   
