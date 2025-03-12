@@ -123,49 +123,6 @@ export const PROJECTS_DATA: ProjectCategory[] = [
     ],
   },
   {
-    title: 'Ionic',
-    iconsrc: '/icons/ionic.png',
-    projects: [
-      {
-        image: 'https://lerdodigital.mx/assets/logo-L.png',
-        title: 'Vialidad - MUNICIPIO DE CD. LERDO',
-        description:
-          'Aplicación móvil para Android enfocada en la captura y procesamiento de multas para los agentes de Tránsito y Vialidad.',
-        details: `Este sistema permite a los agentes gestionar multas en tiempo real, capturar evidencias fotográficas y generar tickets impresos mediante conexión con impresoras Zebra. Utiliza SQLite para almacenamiento local de datos, los cuales se sincronizan con servidores en Azure, asegurando actualización en la plataforma de pagos virtual. Desarrollado en Ionic Angular, con una API en C# y conectividad robusta, proporciona una experiencia integral y confiable.`,
-        website: 'https://www.lerdo.gob.mx/ldop/',
-        imgbg: 'white',
-      },
-      {
-        image: 'https://lerdodigital.mx/assets/logo-L.png',
-        title: 'Parquímetros - MUNICIPIO DE CD. LERDO',
-        description:
-          'Aplicación móvil para Android enfocada en la captura y procesamiento de multas de parquímetros en la ciudad de Lerdo.',
-        details: `Con esta app, los oficiales pueden gestionar multas de parquímetros, capturar evidencias y emitir tickets impresos en el lugar mediante impresoras Zebra conectadas. Utiliza SQLite para almacenamiento local y sincroniza datos en tiempo real con Azure para reflejar los cobros en la plataforma de pagos virtual. Desarrollada en Ionic Angular y respaldada por una API en C#, optimiza el flujo de trabajo de los oficiales en campo.`,
-        website: 'https://www.lerdo.gob.mx/ldop/',
-        imgbg: 'white',
-      },
-      {
-        image: 'https://lerdodigital.mx/assets/logo-L.png',
-        title: 'Plazas y Mercados - MUNICIPIO DE CD. LERDO',
-        description:
-          'Aplicación móvil para Android enfocada en la captura de datos, gestión de cortes de caja y reportes de ventas en las plazas y mercados de la ciudad de Lerdo.',
-        details: `Esta plataforma permite la captura de datos de ventas, gestión de cortes de caja y emisión de tickets impresos en el sitio a través de impresoras Zebra, con soporte para evidencias fotográficas de las transacciones. Con SQLite para almacenamiento local y sincronización en la nube mediante Azure, facilita la administración de plazas y mercados, reflejando las transacciones en la plataforma de pagos. Desarrollado en Ionic Angular y con una API en C#, es una herramienta robusta para la gestión comercial.`,
-        website: 'https://www.lerdo.gob.mx/ldop/',
-        imgbg: 'white',
-      },
-
-      {
-        image: 'https://web.grupoapd.mx/logo.35207d01f78757a7.png',
-        title: 'OCR CNOP - APD',
-        description:
-          'Aplicación móvil para Android enfocada en la captura y procesamiento de credenciales, con integración de API de IA Butler para la extracción de datos y sincronización en SQL Azure.',
-        details: `Esta aplicación permite la digitalización de credenciales mediante el uso de inteligencia artificial, extrayendo datos con la API de IA Butler y sincronizándolos en SQL Azure. Desarrollada originalmente con Express y renovada a NestJS para mayor escalabilidad, está diseñada para manejar más de 300 usuarios y sincronizar información con más de cuatro servidores locales y foráneos. Azure garantiza una entrega rápida y almacenamiento seguro, optimizando la gestión de datos para una experiencia de usuario fluida y confiable.`,
-        website: 'https://web.grupoapd.mx/',
-        imgbg: 'white',
-      },
-    ],
-  },
-  {
     title: 'ASP.NET',
     iconsrc: '/icons/dotnet.png',
     projects: [
@@ -203,6 +160,62 @@ export const PROJECTS_DATA: ProjectCategory[] = [
           'API en C# para la gestión de ventas e inventarios en plazas y mercados, facilitando el control de transacciones y reportes.',
         details: `Esta API permite registrar ventas, gestionar inventarios y realizar cortes de caja en tiempo real. Sincroniza la información con la plataforma de pagos del municipio, facilitando el monitoreo y administración de cada sucursal.`,
         website: 'https://www.lerdo.gob.mx/ldop/',
+        imgbg: 'white',
+      },
+    ],
+  },
+  {
+    title: 'React Native',
+    iconsrc: '/icons/dotnet.png',
+    projects: [
+      {
+        image: 'https://raw.githubusercontent.com/AlanMelendez/restate_app-react-native/refs/heads/main/assets/screenshots/login.png',
+        title: 'ReState App',
+        description: 'Modern real estate app with Google Authentication, dark mode, and a clean UI.',
+        details: `ReState is a **React Native** application designed to provide a seamless home-finding experience.
+        
+        - **Google Authentication** for secure login.
+        - **Beautiful UI with Dark Mode support**.
+        - **Optimized for performance** with NativeWind/Tailwind.
+        - **Built with React Native CLI**.`,
+        website: 'https://github.com/AlanMelendez/restate_app-react-native/',
+        imgbg: 'white',
+      },
+      {
+        image: 'https://github.com/AlanMelendez/gymApp-react-native/blob/main/assets/images/screenshots/login.png?raw=true',
+        title: 'Gymm App',
+        description: 'AI-powered gym assistant with workout tracking and animated UI.',
+        details: `Gymm App is an **AI-powered gym assistant** built with React Native. 
+        
+        - **AI-based coaching & recommendations**.
+        - **Clean and intuitive UI with animated transitions**.
+        - **Bun & PNPM support for faster installs**.
+        - **Developed with React Native CLI**.`,
+        website: 'https://github.com/AlanMelendez/gymApp-react-native ',
+        imgbg: 'white',
+      },
+      {
+        image: 'https://github.com/AlanMelendez/tabs-app-react_native/raw/main/assets/screenshots/drawer.png',
+        title: 'Expo Navigation App',
+        description: 'An Expo-based app demonstrating Stack, Tab, and Drawer navigation.',
+        details: `A **React Native + Expo** project showcasing navigation patterns.
+        
+        - **Stack, Tab, and Drawer navigation examples**.
+        - **Custom themes & responsive layout**.
+        - **Supports Bun, PNPM, and NPM installs**.`,
+        website: 'https://github.com/AlanMelendez/tabs-app-react_native',
+        imgbg: 'white',
+      },
+      {
+        image: 'https://raw.githubusercontent.com/AlanMelendez/calculator_app-react-native/refs/heads/main/assets/images/calculator.png',
+        title: 'CalculatorAPP',
+        description: 'Simple calculator built with Expo and React Native.',
+        details: `CalculatorAPP is a **basic yet intuitive calculator** app built using **React Native + Expo**.
+        
+        - **Basic arithmetic operations (Add, Subtract, Multiply, Divide).**
+        - **Clear button to reset calculations**.
+        - **Optimized for both iOS and Android**.`,
+        website: 'https://github.com/AlanMelendez/calculator_app-react-native/',
         imgbg: 'white',
       },
     ],
@@ -260,6 +273,49 @@ export const PROJECTS_DATA: ProjectCategory[] = [
           'API en Laravel para monitoreo de operaciones en tintorerías, gestionando la recepción y entrega de prendas, ventas y reportes.',
         details: `API para control de servicios en tintorerías, permitiendo gestionar la recepción de prendas, actualización del estado, y facturación en tiempo real. Los datos se almacenan en un VPS Linux de cada negocio, permitiendo un monitoreo completo de las operaciones.`,
         website: 'https://cw.bdktint.com/login',
+        imgbg: 'white',
+      },
+    ],
+  },
+  {
+    title: 'Ionic',
+    iconsrc: '/icons/ionic.png',
+    projects: [
+      {
+        image: 'https://lerdodigital.mx/assets/logo-L.png',
+        title: 'Vialidad - MUNICIPIO DE CD. LERDO',
+        description:
+          'Aplicación móvil para Android enfocada en la captura y procesamiento de multas para los agentes de Tránsito y Vialidad.',
+        details: `Este sistema permite a los agentes gestionar multas en tiempo real, capturar evidencias fotográficas y generar tickets impresos mediante conexión con impresoras Zebra. Utiliza SQLite para almacenamiento local de datos, los cuales se sincronizan con servidores en Azure, asegurando actualización en la plataforma de pagos virtual. Desarrollado en Ionic Angular, con una API en C# y conectividad robusta, proporciona una experiencia integral y confiable.`,
+        website: 'https://www.lerdo.gob.mx/ldop/',
+        imgbg: 'white',
+      },
+      {
+        image: 'https://lerdodigital.mx/assets/logo-L.png',
+        title: 'Parquímetros - MUNICIPIO DE CD. LERDO',
+        description:
+          'Aplicación móvil para Android enfocada en la captura y procesamiento de multas de parquímetros en la ciudad de Lerdo.',
+        details: `Con esta app, los oficiales pueden gestionar multas de parquímetros, capturar evidencias y emitir tickets impresos en el lugar mediante impresoras Zebra conectadas. Utiliza SQLite para almacenamiento local y sincroniza datos en tiempo real con Azure para reflejar los cobros en la plataforma de pagos virtual. Desarrollada en Ionic Angular y respaldada por una API en C#, optimiza el flujo de trabajo de los oficiales en campo.`,
+        website: 'https://www.lerdo.gob.mx/ldop/',
+        imgbg: 'white',
+      },
+      {
+        image: 'https://lerdodigital.mx/assets/logo-L.png',
+        title: 'Plazas y Mercados - MUNICIPIO DE CD. LERDO',
+        description:
+          'Aplicación móvil para Android enfocada en la captura de datos, gestión de cortes de caja y reportes de ventas en las plazas y mercados de la ciudad de Lerdo.',
+        details: `Esta plataforma permite la captura de datos de ventas, gestión de cortes de caja y emisión de tickets impresos en el sitio a través de impresoras Zebra, con soporte para evidencias fotográficas de las transacciones. Con SQLite para almacenamiento local y sincronización en la nube mediante Azure, facilita la administración de plazas y mercados, reflejando las transacciones en la plataforma de pagos. Desarrollado en Ionic Angular y con una API en C#, es una herramienta robusta para la gestión comercial.`,
+        website: 'https://www.lerdo.gob.mx/ldop/',
+        imgbg: 'white',
+      },
+
+      {
+        image: 'https://web.grupoapd.mx/logo.35207d01f78757a7.png',
+        title: 'OCR CNOP - APD',
+        description:
+          'Aplicación móvil para Android enfocada en la captura y procesamiento de credenciales, con integración de API de IA Butler para la extracción de datos y sincronización en SQL Azure.',
+        details: `Esta aplicación permite la digitalización de credenciales mediante el uso de inteligencia artificial, extrayendo datos con la API de IA Butler y sincronizándolos en SQL Azure. Desarrollada originalmente con Express y renovada a NestJS para mayor escalabilidad, está diseñada para manejar más de 300 usuarios y sincronizar información con más de cuatro servidores locales y foráneos. Azure garantiza una entrega rápida y almacenamiento seguro, optimizando la gestión de datos para una experiencia de usuario fluida y confiable.`,
+        website: 'https://web.grupoapd.mx/',
         imgbg: 'white',
       },
     ],
