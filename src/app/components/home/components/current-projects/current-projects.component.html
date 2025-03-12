@@ -29,7 +29,7 @@
                                 <mat-card class="project-card" *ngFor="let project of item.projects">
                                     <div class="container-card-img">
                                       @defer (on viewport) {
-                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" [style.background-color]="project.imgbg" />
+                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img !w-max-[120px] !h-max-[120px]" [style.background-color]="project.imgbg" />
                                       }@placeholder {
                                         <img mat-card-image src="https://via.placeholder.com/150" alt="placeholder" class="card-img" [style.background-color]="project.imgbg" />
                                       }

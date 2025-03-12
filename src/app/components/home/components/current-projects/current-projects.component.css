@@ -32,7 +32,9 @@
 }
 
 
-
+.card-img {
+  max-height: 120px !important;
+}
 .container-title{
   display: flex;
   justify-content: center;
