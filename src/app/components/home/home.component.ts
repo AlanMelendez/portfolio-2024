@@ -12,12 +12,14 @@ import { CurrentProjectsComponent } from "./components/current-projects/current-
 import { MeAbilitiesComponent } from "./components/me-abilities/me-abilities.component";
 import { CommonModule } from '@angular/common';
 import { ImagesSliderComponent } from "../../shared/images-slider/images-slider/images-slider.component";
+import { ExperienceComponent } from "./components/experience/experience.component";
+import { WhatsappButtonComponent } from "./components/whatsapp-button/whatsapp-button.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, MatToolbarModule, MatIconModule, MatFormFieldModule, MatSidenavModule,
-    MatListModule, MatButtonModule, MatNavList, MatListItem, MatExpansionPanel, FooterComponent, AboutMeComponent, CurrentProjectsComponent, MeAbilitiesComponent, ImagesSliderComponent],  templateUrl: './home.component.html',
+    MatListModule, MatButtonModule, MatNavList, MatListItem, MatExpansionPanel, FooterComponent, AboutMeComponent, CurrentProjectsComponent, MeAbilitiesComponent, ImagesSliderComponent, ExperienceComponent, WhatsappButtonComponent],  templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   host: {
     HostListener: 'window:scroll'

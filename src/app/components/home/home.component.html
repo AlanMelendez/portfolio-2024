@@ -39,6 +39,8 @@
     </mat-sidenav>
   
     <mat-sidenav-content class="parent-sticky">
+      <app-whatsapp-button/>
+
       <mat-toolbar class="container-toolbar toolbar-principal"  [ngClass]="navbarColor">
   
         <div class="container-menu">
@@ -98,9 +100,17 @@
 
       <div class="container-3" id="section2"></div>
 
+
+      <div class="container"  id="section1" ></div>
+      
+        <app-experience />
+
+      <div class="container-3" id="section2"></div>
+
       <app-me-abilities />
 
-      <div class="container-2" id="section3"></div>
+      <div class="container-2" style="background-color: rgba(243, 240, 240, 0.377) !important;" id="section3"></div>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
+

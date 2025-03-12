@@ -1,31 +1,79 @@
-<div class="w-full bg-[#0D1B2A] text-white py-12 px-6">
-    <div class="max-w-5xl mx-auto">
-      <!-- Title -->
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-8">
+<div class="w-full relative bg-[#0D1B2A] text-white py-12 px-6 overflow-hidden">
+    <!-- Fondo difuso con gradientes y blur -->
+    <div class="absolute inset-0 pointer-events-none">
+      <!-- Esfera 1 -->
+      <div
+        class="absolute w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20
+               -top-32 -left-32 animate-pulse"
+      ></div>
+  
+      <!-- Esfera 2 -->
+      <div
+        class="absolute w-80 h-80 bg-purple-500 rounded-full mix-blend-screen filter blur-3xl opacity-30
+               top-16 -right-20 animate-pulse animation-delay-2000"
+      ></div>
+    </div>
+  
+    <div class="max-w-5xl mx-auto relative z-10">
+      <!-- Título -->
+      <h2
+        class="text-4xl font-bold text-center mb-12 
+               text-blue-200 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+      >
         Experiencia Profesional
       </h2>
-
-      <!-- Timeline -->
-      <div class="relative border-l-4 border-blue-500 pl-6">
-        <div *ngFor="let job of experiences; let i = index" 
-             class="mb-12 relative group">
+  
+      <!-- Contenedor principal de la línea de tiempo -->
+      <div class="relative">
+        <!-- Línea vertical con degradado y brillo -->
+        <div
+          class="absolute left-2 w-[2px] h-full 
+                 bg-gradient-to-b from-white via-blue-400 to-purple-500
+                 shadow-[0_0_15px_rgba(255,255,255,0.5)]"
+        ></div>
+  
+        <!-- Iterar sobre la lista de experiencias -->
+        <div *ngFor="let job of experiences; let i = index" class="relative group mb-16 last:mb-0">
           
-          <!-- Timeline Dot -->
-          <div class="absolute -left-9 top-2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white transition-transform group-hover:scale-110"></div>
-          
-          <!-- Job Details -->
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-semibold text-blue-300">
+          <!-- Punto centrado en la línea -->
+          <div
+            class="absolute top-6 left-2 w-6 h-6 rounded-full
+                   bg-gradient-to-tr from-white via-blue-400 to-purple-400
+                   ring-4 ring-white shadow-[0_0_15px_rgba(255,255,255,0.7)]
+                   transition-transform duration-300 group-hover:scale-110
+                   hover:animate-ping
+                   transform -translate-x-1/2 -translate-y-1/2"
+          ></div>
+  
+          <!-- Tarjeta -->
+          <div
+            class="ml-12 bg-gray-800 p-6 rounded-lg shadow-lg
+                   transform-gpu transition-transform duration-500
+                   group-hover:-translate-y-1 group-hover:scale-[1.03] group-hover:-rotate-1
+                   hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]"
+          >
+            <!-- Puesto -->
+            <h3
+              class="text-xl font-semibold text-blue-200 tracking-wide
+                     drop-shadow-[0_0_5px_rgba(255,255,255,0.6)]"
+            >
               {{ job.position }}
             </h3>
-            <p class="text-sm text-gray-400">{{ job.company }} • {{ job.period }}</p>
-            
-            <p class="text-gray-300 mt-4 leading-relaxed">{{ job.description }}</p>
-
-            <!-- Skills -->
+            <!-- Empresa y periodo -->
+            <p class="text-sm text-gray-400">
+              {{ job.company }} • {{ job.period }}
+            </p>
+            <!-- Descripción -->
+            <p class="text-gray-300 mt-4 leading-relaxed">
+              {{ job.description }}
+            </p>
+            <!-- Habilidades -->
             <div class="flex flex-wrap mt-4">
-              <span *ngFor="let skill of job.skills"
-                    class="text-sm bg-blue-500 text-white px-3 py-1 rounded-full mr-2 mb-2">
+              <span
+                *ngFor="let skill of job.skills"
+                class="text-sm bg-blue-500 text-white px-3 py-1 rounded-full mr-2 mb-2
+                       hover:bg-blue-400 transition-colors duration-200"
+              >
                 {{ skill }}
               </span>
             </div>
@@ -34,3 +82,4 @@
       </div>
     </div>
   </div>
+  
