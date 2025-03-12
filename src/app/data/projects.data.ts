@@ -166,7 +166,7 @@ export const PROJECTS_DATA: ProjectCategory[] = [
   },
   {
     title: 'React Native',
-    iconsrc: '/icons/dotnet.png',
+    iconsrc: '/icons/reactnative.svg',
     projects: [
       {
         image: 'https://raw.githubusercontent.com/AlanMelendez/restate_app-react-native/refs/heads/main/assets/screenshots/login.png',
