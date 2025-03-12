@@ -18,7 +18,7 @@ import {
 
 </div> -->
 
-<div class="flex flex-col items-center w-full px-6 py-10 bg-[#0D1B2A] text-white">
+<div class="flex h-full flex-col items-center w-full px-10 py-20 bg-[#0D1B2A] text-white">
       <!-- Profile Image and Social Icons -->
       <div class="relative flex flex-col items-center">
         <img src="/img/me-one.png" alt="Alan Cuevas" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-400 shadow-lg" />
@@ -39,21 +39,17 @@ import {
 
       <!-- Name and Role -->
       <div class="mt-4 text-center">
-        <h1 class="text-md mb-0 md:text-md font-bold " style="font-size: 40px;">
-           Alan Cuevas Melendez
+        <h1 class="text-md mb-0">
+           <strong class=" text-[30px] md:!text-md font-bold lg:!text-2xl text-end">Alan Cuevas Melendez</strong>
         </h1>
         <p class="text-gray-300 text-sm md:text-lg">Full Stack Developer</p>
       </div>
 
       <!-- About Me -->
-      <div class="mt-6 max-w-md text-justify text-gray-300 text-sm md:text-base leading-relaxed">
-        👨‍💻 <strong>Ingeniero Informático</strong> con más de <strong>3 años de experiencia</strong> desarrollando aplicaciones 
-        <strong>web</strong> y <strong>móviles híbridas</strong>. Especializado en <strong>Angular, Ionic, Laravel y .NET</strong>, aplicando buenas prácticas 
+      <div class="mt-6 max-w-md text-justify text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+        👨‍💻 <strong>Ingeniero Informático</strong> con más de <strong>4 años de experiencia</strong> desarrollando aplicaciones 
+        <strong>web</strong> y <strong>móviles híbridas/nativas</strong>. Especializado en <strong>Angular, React Native, Ionic, Laravel y .NET</strong>, aplicando buenas prácticas 
         como <strong>Clean Code</strong> y arquitecturas escalables.
-      </div>
-
-      <div class="mt-4 max-w-md text-justify text-gray-300 text-sm md:text-base leading-relaxed">
-        🚀 Apasionado por crear soluciones tecnológicas innovadoras que optimicen procesos y generen impacto positivo.
       </div>
 
       <!-- CV Button -->
