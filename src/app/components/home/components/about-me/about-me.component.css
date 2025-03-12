@@ -201,3 +201,23 @@
     font-size: 14px;
   }
 }
+
+/* Animación de escritura */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-typing {
+  animation: typing 3s steps(40) infinite alternate, blink-caret 0.7s step-end infinite;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+

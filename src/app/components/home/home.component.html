@@ -1,34 +1,26 @@
-
-
 <mat-sidenav-container class="sidenav-container">
-    <!-- Poner "openeed dentro del mat-sidenav para poder dejarla abierta siempre" -->
-    <mat-sidenav
-      #drawer
-      class="sidenav color-primario "
-      style="width: 300px; padding: 5px; "
-      [ngClass]="navbarColor"
-      #sidenav>
-        <mat-toolbar class="color-primario toolbar-1 "  [ngClass]="navbarColor">
-            <div class="toolbar-2"  [ngClass]="navbarColor"
-        >
-            <img
-            src="/icono.png"
-            alt="icon-app-logo"
-            style="opacity: 0.8; width: 80px"
-            />
-        </div>
-    
-    
-    
-    
-    
-        </mat-toolbar>
-        <div class="user-panel "  [ngClass]="navbarColor">
-
-            <div class="info-user">
-            <a class="text-user-name"></a>
-            </div>
-        </div>
+  <!-- Poner "openeed dentro del mat-sidenav para poder dejarla abierta siempre" -->
+  <mat-sidenav
+    #drawer
+    class="sidenav color-primario"
+    style="width: 300px; padding: 5px"
+    [ngClass]="navbarColor"
+    #sidenav
+  >
+    <mat-toolbar class="color-primario toolbar-1" [ngClass]="navbarColor">
+      <div class="toolbar-2" [ngClass]="navbarColor">
+        <img
+          src="/icono.png"
+          alt="icon-app-logo"
+          style="opacity: 0.8; width: 80px"
+        />
+      </div>
+    </mat-toolbar>
+    <div class="user-panel" [ngClass]="navbarColor">
+      <div class="info-user">
+        <a class="text-user-name"></a>
+      </div>
+    </div>
 
         <mat-nav-list>
         <div class="container-fields-2 "  [ngClass]="navbarColor">
@@ -104,21 +96,11 @@
       
         <app-current-projects  />
 
+      <div class="container-3" id="section2"></div>
 
-        <div class="container-3" id="section2">
-        </div>
+      <app-me-abilities />
 
-        <app-me-abilities />
-
-        <div class="container-2" id="section3"></div>
-
-      </div>
-
-
-
-    </mat-sidenav-content>
-  
-  
-  </mat-sidenav-container>
-
-  
+      <div class="container-2" id="section3"></div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

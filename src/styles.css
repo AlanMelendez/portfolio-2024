@@ -1,8 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-/* TAILWIND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 
@@ -27,9 +26,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   src: url(/public/fonts/code/CODE\ Light.otf) format("opentype");
 }
 
-/* *{
-  background-color: rgb(6, 21, 48);
-} */
 
 .scroll-suave{
   scroll-behavior: smooth; /* Habilita el desplazamiento suave */

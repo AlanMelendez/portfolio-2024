@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   template: `
     <!-- <div class="portfolio-container">
       <img src="/img/me-one.png" alt="Tu imagen" class="profile-image" />
@@ -16,7 +18,7 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 
 </div> -->
 
-  <div class="container-total">
+    <div class="container-total">
       <div class="portfolio-container">
         <!-- Contenedor Izquierdo -->
         <div class="left-container">
@@ -29,30 +31,55 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
               <a href="mailto:alanmelendezalaan@outlook.com" target="_blank">
                 <img src="/icons/gmail.png" alt="Gmail" class="img-social" />
               </a>
-              <a href="https://www.linkedin.com/in/alan-cuevas-melendez-bb3537218/" target="_blank">
-                <img src="/icons/linkedin.png" alt="LinkedIn" class="img-social" />
+              <a
+                href="https://www.linkedin.com/in/alan-cuevas-melendez-bb3537218/"
+                target="_blank"
+              >
+                <img
+                  src="/icons/linkedin.png"
+                  alt="LinkedIn"
+                  class="img-social"
+                />
               </a>
             </div>
           </div>
-          <div class="container-name">
-          <h1 class="portfolio-title">{{ displayedText }}</h1>
-        </div>
+          <div class="container-name mt-3 mb-2">
+            <!-- Nombre y Cargo -->
+            <h1
+              class="text-lg md:text-4xl font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
+            >
+              ¡Hola! Soy Alan Cuevas Melendez
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300">Full Stack Developer</p>
+          </div>
         </div>
 
         <!-- Contenedor Derecho -->
-        <div class="right-container">
-          <p class="portfolio-description">
-             <b>Ingeniero Informático </b>con más de tres años de experiencia como <b>Desarrollador Full Stack</b> , especializado en aplicaciones web y móviles híbridas. Me enfoco en diseñar soluciones de alto rendimiento aplicando buenas prácticas, como Clean Code y arquitecturas escalables, para proyectos que integran tecnologías como Angular, Ionic, Laravel y .NET.
+        <div class="right-container flex flex-col justify-center text-justify">
+          <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
+            👨‍💻 <b>Ingeniero Informático</b> con más de
+            <b>3 años de experiencia</b> desarrollando aplicaciones <b>web</b> y
+            <b>móviles híbridas</b>. Especializado en tecnologías como
+            <b>Angular, Ionic, Laravel y .NET</b>, implemento buenas prácticas
+            como <b>Clean Code</b> y arquitecturas escalables.
           </p>
+          <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
+            🚀 Apasionado por crear soluciones tecnológicas innovadoras que
+            optimicen procesos y generen impacto positivo.
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
+              target="_blank"
+              class="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:scale-105 transition-transform duration-300"
+            >
+              Descargar CV
+            </a>
+          </div>
           <!-- <button class="portfolio-button">dot</button> -->
         </div>
+      </div>
     </div>
-  </div>
-
-
-
-
-
   `,
   styleUrl: './about-me.component.css',
   changeDetection: ChangeDetectionStrategy.Default,
@@ -74,4 +101,4 @@ export class AboutMeComponent {
       setTimeout(() => this.startTypingEffect(), this.typingSpeed);
     }
   }
- }
+}
