@@ -28,7 +28,12 @@
                             <div class="card-container scroll-suave" #scrollCardContainer>
                                 <mat-card class="project-card" *ngFor="let project of item.projects">
                                     <div class="container-card-img">
-                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" [style.background-color]="project.imgbg"       />
+                                      @defer (on viewport) {
+                                        <img mat-card-image src="{{project.image}}" alt="{{project.title}}" class="card-img" [style.background-color]="project.imgbg" />
+                                      }@placeholder {
+                                        <img mat-card-image src="https://via.placeholder.com/150" alt="placeholder" class="card-img" [style.background-color]="project.imgbg" />
+                                      }
+                                      
                                     </div>
                                     <div class="container-card-title">
                                         <mat-card-title class="card-title">{{project.title}}</mat-card-title>

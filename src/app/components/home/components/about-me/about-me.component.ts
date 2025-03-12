@@ -18,71 +18,57 @@ import {
 
 </div> -->
 
-    <div class="container-total">
-      <div class="portfolio-container">
-        <!-- Contenedor Izquierdo -->
-        <div class="left-container">
-          <div class="container-img">
-            <img src="/img/me-one.png" alt="Tu imagen" class="profile-image" />
-            <div class="social-icons">
-              <a href="https://github.com/AlanMelendez" target="_blank">
-                <img src="/icons/github.png" alt="GitHub" class="img-social" />
-              </a>
-              <a href="mailto:alanmelendezalaan@outlook.com" target="_blank">
-                <img src="/icons/gmail.png" alt="Gmail" class="img-social" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/alan-cuevas-melendez-bb3537218/"
-                target="_blank"
-              >
-                <img
-                  src="/icons/linkedin.png"
-                  alt="LinkedIn"
-                  class="img-social"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="container-name mt-3 mb-2">
-            <!-- Nombre y Cargo -->
-            <h1
-              class="text-lg md:text-4xl font-bold mb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-4 text-white"
-            >
-              ¡Hola! Soy Alan Cuevas Melendez
-            </h1>
-            <p class="text-lg md:text-xl text-gray-300">Full Stack Developer</p>
-          </div>
-        </div>
+<div class="flex flex-col items-center w-full px-6 py-10 bg-[#0D1B2A] text-white">
+      <!-- Profile Image and Social Icons -->
+      <div class="relative flex flex-col items-center">
+        <img src="/img/me-one.png" alt="Alan Cuevas" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-400 shadow-lg" />
 
-        <!-- Contenedor Derecho -->
-        <div class="right-container flex flex-col justify-center text-justify">
-          <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
-            👨‍💻 <b>Ingeniero Informático</b> con más de
-            <b>3 años de experiencia</b> desarrollando aplicaciones <b>web</b> y
-            <b>móviles híbridas</b>. Especializado en tecnologías como
-            <b>Angular, Ionic, Laravel y .NET</b>, implemento buenas prácticas
-            como <b>Clean Code</b> y arquitecturas escalables.
-          </p>
-          <p class="text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
-            🚀 Apasionado por crear soluciones tecnológicas innovadoras que
-            optimicen procesos y generen impacto positivo.
-          </p>
-          <div class="flex justify-center">
-                <a
-                  href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
-                  target="_blank"
-                  class="inline-block px-6 py-3 mt-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md 
-                        hover:bg-blue-600 hover:scale-105 transition-transform duration-300
-                        animate-bounce hover:animate-none"
-                >
-                  Abrir CV
-                </a>
-          </div>
-
-          <!-- <button class="portfolio-button">dot</button> -->
+        <!-- Social Icons -->
+        <div class="flex space-x-3 mt-3">
+          <a href="https://github.com/AlanMelendez" target="_blank">
+            <img src="/icons/github.png" alt="GitHub" class="w-7 h-7 md:w-9 md:h-9 transition-transform hover:scale-110" />
+          </a>
+          <a href="mailto:alanmelendezalaan@outlook.com" target="_blank">
+            <img src="/icons/gmail.png" alt="Gmail" class="w-7 h-7 md:w-9 md:h-9 transition-transform hover:scale-110" />
+          </a>
+          <a href="https://www.linkedin.com/in/alan-cuevas-melendez-bb3537218/" target="_blank">
+            <img src="/icons/linkedin.png" alt="LinkedIn" class="w-7 h-7 md:w-9 md:h-9 transition-transform hover:scale-110" />
+          </a>
         </div>
       </div>
+
+      <!-- Name and Role -->
+      <div class="mt-4 text-center">
+        <h1 class="text-md mb-0 md:text-md font-bold " style="font-size: 40px;">
+           Alan Cuevas Melendez
+        </h1>
+        <p class="text-gray-300 text-sm md:text-lg">Full Stack Developer</p>
+      </div>
+
+      <!-- About Me -->
+      <div class="mt-6 max-w-md text-justify text-gray-300 text-sm md:text-base leading-relaxed">
+        👨‍💻 <strong>Ingeniero Informático</strong> con más de <strong>3 años de experiencia</strong> desarrollando aplicaciones 
+        <strong>web</strong> y <strong>móviles híbridas</strong>. Especializado en <strong>Angular, Ionic, Laravel y .NET</strong>, aplicando buenas prácticas 
+        como <strong>Clean Code</strong> y arquitecturas escalables.
+      </div>
+
+      <div class="mt-4 max-w-md text-justify text-gray-300 text-sm md:text-base leading-relaxed">
+        🚀 Apasionado por crear soluciones tecnológicas innovadoras que optimicen procesos y generen impacto positivo.
+      </div>
+
+      <!-- CV Button -->
+      <div class="mt-6">
+        <a
+          href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
+          target="_blank"
+          class="px-5 py-2.5 md:px-6 md:py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md transition-all duration-300
+                 hover:bg-blue-600 hover:scale-105 animate-bounce hover:animate-none"
+        >
+          Abrir CV
+        </a>
+      </div>
     </div>
+  
   `,
   styleUrl: './about-me.component.css',
   changeDetection: ChangeDetectionStrategy.Default,
