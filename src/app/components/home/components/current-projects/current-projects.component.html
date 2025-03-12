@@ -65,7 +65,7 @@
             <mat-dialog-content class="modal-content">
               <p class="description-text">
                 {{ selectedProject?.description }}
-                <a *ngIf="selectedProject?.website" href="{{ selectedProject.website }}" target="_blank" class="link-icon">
+                <a *ngIf="selectedProject?.website" href="{{ selectedProject!.website }}" target="_blank" class="link-icon">
                   <mat-icon>open_in_new</mat-icon>
                 </a>
               </p>
@@ -75,9 +75,9 @@
 
               <div class="images-component mt-3">
                 <app-images-slider  [elementos]="[
-                { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 11 },
-                { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 13 },
-                { folderPictures: '/assets/MODULO_MESEROS_BDKREST', numberPictures: 0 }
+                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: selectedProject!.phoneMode!},
+                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: selectedProject!.tabletMode!},
+                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: 0 }
               ]"/>
               </div>
 
