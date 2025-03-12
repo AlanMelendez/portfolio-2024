@@ -331,3 +331,8 @@
     border-color: #333;
   }
 }
+
+.preserve-formatting {
+  white-space: pre-line;  /* Preserves new lines and spaces */
+  word-wrap: break-word;  /* Prevents text overflow */
+}

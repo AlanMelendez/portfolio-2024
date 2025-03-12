@@ -10,7 +10,7 @@ export interface Project {
     tabletMode?: number;
     phoneMode?: number;
     desktopMode?: any[];
-    folerPictures?: string;
+    folderPictures?: string;
   }
   
   export interface ProjectCategory {

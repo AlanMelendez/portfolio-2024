@@ -70,15 +70,17 @@
                 </a>
               </p>
               <div class="modal-details">
-                <p>{{ selectedProject?.details }}</p>
+                <p class="preserve-formatting">{{ selectedProject?.details }}</p>
               </div>
 
               <div class="images-component mt-3">
-                <app-images-slider  [elementos]="[
-                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: selectedProject!.phoneMode!},
-                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: selectedProject!.tabletMode!},
-                { folderPictures: '/assets/{{selectedProject.folderPictures}}', numberPictures: 0 }
-              ]"/>
+                <app-images-slider  
+                [elementos]="[
+                  { folderPictures: '/assets/' + selectedProject?.folderPictures!, numberPictures: selectedProject?.phoneMode! },
+                  { folderPictures: '/assets/' + selectedProject?.folderPictures!, numberPictures: selectedProject?.tabletMode! },
+                  { folderPictures: '/assets/' + selectedProject?.folderPictures!, numberPictures: 0 }
+                ]"
+              />
               </div>
 
               <div class="iframe-website">
