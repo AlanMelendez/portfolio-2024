@@ -92,10 +92,10 @@ import {
     <div class="text-center">
       <!-- Texto con efecto de tipeo (tu propiedad displayedText) -->
       <h1
-        class="text-3xl md:text-4xl font-bold mb-1 text-blue-200
+        class="!text-md md:font-bold  text-white
                drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]"
       >
-        {{ displayedText }}
+        <strong class="!text-[30px]">{{ displayedText }}</strong>
       </h1>
       <p class="text-gray-300 text-sm md:text-lg">
         Full Stack Developer
