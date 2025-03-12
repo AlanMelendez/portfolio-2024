@@ -58,6 +58,36 @@ export const PROJECTS_DATA: ProjectCategory[] = [
         folderPictures: 'FACSA',
       },
       {
+        image: '/icons/angular.png',
+        title: 'Chat App - Angular',
+        description:
+          'Aplicación de chat en tiempo real con Angular, NestJS y WebSockets para comunicación instantánea.',
+        details: `Este proyecto es una aplicación de chat en tiempo real desarrollada con **Angular** para el frontend y **NestJS** en el backend. Utiliza **Socket.IO** para garantizar una comunicación bidireccional eficiente y fluida entre los usuarios.
+  
+        **Características principales:**
+        - 📌 **Chat Cliente-Mesero:** Permite la comunicación en tiempo real entre clientes y meseros en restaurantes.
+        - 📌 **Soporte Multi-Sala:** Cada mesa tiene su propia sala de chat independiente para una mejor organización.
+        - 📌 **Mensajes Persistentes:** Los mensajes se almacenan en **MySQL**, garantizando la persistencia y consulta posterior.
+        - 📌 **Notificaciones Dinámicas:** Indicadores de mensajes no leídos para mejorar la experiencia del usuario.
+        - 📌 **Interfaz Moderna:** UI desarrollada con **TailwindCSS** para un diseño atractivo y responsivo.
+        - 📌 **Autenticación Segura:** Implementación de autenticación con **JWT (JSON Web Tokens)**.
+  
+        **Tecnologías utilizadas:**
+        - 🎨 **Frontend:** Angular 19, TailwindCSS.
+        - 🔥 **Backend:** NestJS, Socket.IO.
+        - 🗄 **Base de Datos:** MySQL.
+        - 🔐 **Autenticación:** JWT para gestionar sesiones de usuario.
+  
+        **Casos de uso:**
+        - 📲 Comunicación entre meseros y clientes en restaurantes.
+        - 🎯 Soporte en tiempo real para plataformas de servicio.
+        - 🔄 Implementación de sistemas de mensajería interna en empresas.
+  
+        Este proyecto proporciona una base sólida para el desarrollo de aplicaciones de chat en tiempo real con una arquitectura modular y escalable.`,
+        website: 'https://github.com/AlanMelendez/chat-app-angular',
+        imgbg: 'white',
+      },
+      {
         image: 'https://www.bdksistemas.com.mx/build/img/BDKREST/LOGO_BCO.avif',
         title: 'Concentrador Web BDKREST',
         description:
@@ -166,7 +196,7 @@ export const PROJECTS_DATA: ProjectCategory[] = [
   },
   {
     title: 'React Native',
-    iconsrc: '/icons/reactnative.svg',
+    iconsrc: '/assets/icons/reactnative.svg',
     projects: [
       {
         image: 'https://raw.githubusercontent.com/AlanMelendez/restate_app-react-native/refs/heads/main/assets/screenshots/login.png',
@@ -326,6 +356,31 @@ export const PROJECTS_DATA: ProjectCategory[] = [
     projects: [
       {
         image: '/icons/nest.png',
+        title: 'Chat App - NestJS',
+        description:
+          'Aplicación de chat en tiempo real construida con NestJS y WebSockets para comunicación eficiente.',
+        details: `Este proyecto es una aplicación de chat en tiempo real desarrollada con **NestJS** y **TypeScript**. Utiliza **WebSockets** para garantizar una comunicación fluida entre los usuarios, permitiendo el envío y recepción de mensajes de manera instantánea. 
+  
+        La arquitectura modular de NestJS facilita la escalabilidad y mantenimiento del código, asegurando un sistema robusto para múltiples usuarios en simultáneo. 
+  
+        **Tecnologías utilizadas:**
+        - **NestJS** para la estructura del backend.
+        - **TypeScript** para tipado seguro.
+        - **WebSockets** para comunicación en tiempo real.
+        - **JWT (JSON Web Token)** para autenticación segura de usuarios.
+  
+        **Características principales:**
+        - Envío y recepción de mensajes en tiempo real.
+        - Múltiples salas de chat.
+        - Autenticación segura con JWT.
+        - Escalabilidad y modularidad con NestJS.
+  
+        El proyecto está diseñado como una base sólida para construir aplicaciones de mensajería y chat en tiempo real con alta disponibilidad.`,
+        website: 'https://github.com/AlanMelendez/chat-app-nestjs',
+        imgbg: 'white',
+      },
+      {
+        image: '/icons/nest.png',
         title: 'API OCR CNOP - APD',
         description:
           'API para captura y procesamiento de credenciales con IA, usando Butler para extracción de datos y sincronización en SQL Azure.',
@@ -333,6 +388,7 @@ export const PROJECTS_DATA: ProjectCategory[] = [
         website: 'https://web.grupoapd.mx/',
         imgbg: 'white',
       },
+      
     ],
   },
 ];
