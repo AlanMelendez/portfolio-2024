@@ -68,14 +68,17 @@ import {
             optimicen procesos y generen impacto positivo.
           </p>
           <div class="flex justify-center">
-            <a
-              href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
-              target="_blank"
-              class="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:scale-105 transition-transform duration-300"
-            >
-              Descargar CV
-            </a>
+                <a
+                  href="https://alancuevasmelendez.com/cv/AlanCuevasMelendez.pdf"
+                  target="_blank"
+                  class="inline-block px-6 py-3 mt-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md 
+                        hover:bg-blue-600 hover:scale-105 transition-transform duration-300
+                        animate-bounce hover:animate-none"
+                >
+                  Abrir CV
+                </a>
           </div>
+
           <!-- <button class="portfolio-button">dot</button> -->
         </div>
       </div>

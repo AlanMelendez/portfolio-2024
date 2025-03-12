@@ -7,7 +7,7 @@ export const PROJECTS_DATA: ProjectCategory[] = [
     projects: [
       {
         image: 'https://www.bdksistemas.com.mx/build/img/BDKREST/LOGO_BCO.avif',
-        title: 'WebApp Envios a Domicilio - BDK',
+        title: 'Envios a Domicilio - BDK',
         description:
           'Plataforma de gestión de envíos a domicilio con autenticación segura, integración con otros servicios y notificaciones en tiempo real.',
 
@@ -34,8 +34,8 @@ export const PROJECTS_DATA: ProjectCategory[] = [
         El sistema se integra con el MENÚ DIGITAL mediante una arquitectura de microservicios. Está desarrollado con Angular v19 para el frontend y PHP/Laravel v11 para el backend. Utiliza un servidor local con XAMPP y un Dockerfile para su implementación en contenedores, además de un microservicio en .NET 8 con WebSockets para la comunicación en tiempo real.`,
         website: '',
         imgbg: 'black',
-        tabletMode: 13,
-        phoneMode: 11,
+        tabletMode: 5,
+        phoneMode: 14,
         desktopMode: [],
         folderPictures: 'MODULO_MESEROS_BDKREST',
       },
@@ -52,6 +52,10 @@ export const PROJECTS_DATA: ProjectCategory[] = [
                     y notificaciones por correo electrónico.`,
         website: 'https://citas.facsa.ujed.mx/auth/login',
         imgbg: 'red',
+        tabletMode: 0,
+        phoneMode: 15,
+        desktopMode: [],
+        folderPictures: 'FACSA',
       },
       {
         image: 'https://www.bdksistemas.com.mx/build/img/BDKREST/LOGO_BCO.avif',
